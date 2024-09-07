@@ -138,7 +138,10 @@ button i {
 }
 
 button.active i {
-  color: red; /* Color when the dropdown is active */
+  color: #006296; /* Color when the dropdown is active */
+}
+button.active span {
+  color: #006296; /* Color when the dropdown is active */
 }
 
 .try-crm-for-free h1 {
