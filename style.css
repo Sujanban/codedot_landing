@@ -11,13 +11,13 @@ a {
   text-decoration: none;
 }
 
-.readmore_btn{
+.readmore_btn {
   float: right;
   padding: 4px 6px;
   border-radius: 10px;
   font-size: 16px;
   /* color: red; */
-  background-color: #D9F1FD;
+  background-color: #d9f1fd;
   font-weight: 600;
 }
 
@@ -148,10 +148,10 @@ button i {
 }
 
 button.active i {
-  color: #006296; 
+  color: #006296;
 }
 button.active span {
-  color: #006296; 
+  color: #006296;
 }
 
 .try-crm-for-free h1 {
@@ -210,10 +210,10 @@ button.active span {
 .dropdown-item:hover .dropdown-item-hover {
   display: grid;
 }
-.dropdown-item  .active-arrow{
+.dropdown-item .active-arrow {
   display: none;
 }
-.dropdown-item:hover  .active-arrow{
+.dropdown-item:hover .active-arrow {
   display: block;
 }
 
@@ -235,7 +235,7 @@ button.active span {
   z-index: 999;
   /* border: 2px solid red; */
   border-radius: 16px;
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
   display: none;
 }
 .dropdown-item-hover2 {
@@ -250,29 +250,26 @@ button.active span {
   z-index: 999;
   /* border: 2px solid red; */
   border-radius: 16px;
-  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.20);
+  box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.2);
   display: none;
 }
 
-
-.dropdown-item-hover1 .dropdown-item-hover-content{
+.dropdown-item-hover1 .dropdown-item-hover-content {
   width: 480px;
   padding: 20px 0px;
 }
-.dropdown-item-hover2 .dropdown-item-hover-content{
+.dropdown-item-hover2 .dropdown-item-hover-content {
   width: 480px;
   padding: 20px 0px;
 }
 
-.dropdown-item-hover-cards{
+.dropdown-item-hover-cards {
   position: relative;
   width: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-
-
 
 .dropdown-item-hover1 p {
   color: rgba(0, 0, 0, 0.6);
@@ -291,14 +288,14 @@ button.active span {
   text-align: justify;
   padding: 20px 0px;
 }
-.dropdown-item-hover-cards img{
+.dropdown-item-hover-cards img {
   width: 100%;
 }
-.dropdown-item-hover-cards .card2{
+.dropdown-item-hover-cards .card2 {
   position: absolute;
   z-index: 999999999;
   bottom: 30px;
-  right: -50px;  
+  right: -50px;
 }
 .dropdown-content .dropdown-item .icon {
   padding: 10px;
@@ -344,4 +341,56 @@ button.active + .dropdown-content {
 
 button.active .fa-angle-up {
   transform: rotate(180deg);
+}
+
+/* *******************************hero section starts here*********************************** */
+
+.hero {
+  margin-top: 10vh;
+  margin: auto !important;;
+  padding: 0px 20px;
+  position: relative;
+  height: 100%;
+}
+
+.hero {
+  max-width: 1350px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+swiper-slide {
+  width: 90%;
+}
+
+swiper-slide:nth-child(2n) {
+  width: 60%;
+}
+
+swiper-slide:nth-child(3n) {
+  width: 40%;
 }
