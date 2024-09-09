@@ -11,6 +11,16 @@ a {
   text-decoration: none;
 }
 
+.readmore_btn{
+  float: right;
+  padding: 4px 6px;
+  border-radius: 10px;
+  font-size: 16px;
+  /* color: red; */
+  background-color: #D9F1FD;
+  font-weight: 600;
+}
+
 :root {
   --primary-black: #18181b;
   --Primary-Primary: #009ff5;
@@ -138,10 +148,10 @@ button i {
 }
 
 button.active i {
-  color: #006296; /* Color when the dropdown is active */
+  color: #006296; 
 }
 button.active span {
-  color: #006296; /* Color when the dropdown is active */
+  color: #006296; 
 }
 
 .try-crm-for-free h1 {
@@ -200,6 +210,13 @@ button.active span {
 .dropdown-item:hover .dropdown-item-hover {
   display: grid;
 }
+.dropdown-item  .active-arrow{
+  display: none;
+}
+.dropdown-item:hover  .active-arrow{
+  display: block;
+}
+
 .dropdown-item-relative:hover .dropdown-item-hover1 {
   display: grid;
 }
@@ -262,9 +279,8 @@ button.active span {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
-  padding: 4px 0px;
+  padding: 10px 0px;
   text-align: justify;
-  padding: 20px 0px;
 }
 .dropdown-item-hover2 p {
   color: rgba(0, 0, 0, 0.6);
