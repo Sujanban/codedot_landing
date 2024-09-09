@@ -12,8 +12,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Include Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
   </head>
   <body>
+    <!-- header section starts here -->
     <header>
       <div class="header-left">
         <a href="/">
@@ -1165,30 +1172,214 @@
     <!-- hero section starts here -->
     <section class="hero">
       <swiper-container
-      class="mySwiper"
-      slides-per-view="1.15"
-      centered-slides="true"  
-      pagination="false"
-      loop="false"
-      autoplay-delay="5000"  
-    autoplay-disable-on-interaction="false"
+        class="mySwiper"
+        slides-per-view="1.15"
+        centered-slides="true"
+        pagination="false"
+        loop="false"
+        autoplay-delay="5000"
+        autoplay-disable-on-interaction="false"
       >
         <swiper-slide>
-          <img src="./assets/slide1.png" alt="">
+          <img src="./assets/slide1.png" alt="" />
         </swiper-slide>
         <swiper-slide>
-          <img src="./assets/slide2.png" alt="">
+          <img src="./assets/slide2.png" alt="" />
         </swiper-slide>
         <swiper-slide>
-          <img src="./assets/slide3.png" alt="">
+          <img src="./assets/slide3.png" alt="" />
         </swiper-slide>
       </swiper-container>
     </section>
     <!-- hero section ends here -->
-    <!-- \swiper js -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- why choose us section starts here -->
+
+    <section class="whychooseus">
+      <div>
+        <span class="whychooseus-span">Why Choose Us</span>
+        <h1 class="whychooseus-heading">Comprehensive Customer Insights</h1>
+        <p class="whychooseus-para">
+          Gain a 360-degree view of your customers with our CRM. Track every
+          interaction, from initial contact to final sale, and build deeper
+          relationships based on data-driven insights.
+        </p>
+
+        <div class="card-wrapper">
+          <!-- <div class="whychooseus-card">
+            <div class="whychooseus-card-image">
+              <img src="./assets/whychooseus.png" alt="" />
+            </div>
+            <div class="whychooseus-card-content">
+              <h1>User-Friendly Interface</h1>
+              <p>
+                Our intuitive interface is designed with ease of use in mind.
+                Whether you’re a tech-savvy professional
+              </p>
+            </div>
+          </div>
+          <div class="whychooseus-card">
+            <div class="whychooseus-card-image">
+              <img src="./assets/whychooseus.png" alt="" />
+            </div>
+            <div class="whychooseus-card-content">
+              <h1>User-Friendly Interface</h1>
+              <p>
+                Our intuitive interface is designed with ease of use in mind.
+                Whether you’re a tech-savvy professional
+              </p>
+            </div>
+          </div>
+          <div class="whychooseus-card">
+            <div class="whychooseus-card-image">
+              <img src="./assets/whychooseus.png" alt="" />
+            </div>
+            <div class="whychooseus-card-content">
+              <h1>User-Friendly Interface</h1>
+              <p>
+                Our intuitive interface is designed with ease of use in mind.
+                Whether you’re a tech-savvy professional
+              </p>
+            </div>
+          </div> -->
+
+          <section class="whychooseus">
+            <swiper-container
+              class="mySwiper"
+              slides-per-view="3"
+              pagination="false"
+              navigation="true"
+            >
+              <swiper-slide>
+                <div class="whychooseus-card">
+                  <div class="whychooseus-card-image">
+                    <img src="./assets/whychooseus.png" alt="" />
+                    <a class="explore-more" href="">Explore More-></a>
+                  </div>
+                  <div class="whychooseus-card-content">
+                    <h1>User-Friendly Interface</h1>
+                    <p>
+                      Our intuitive interface is designed with ease of use in
+                      mind. Whether you’re a tech-savvy professional
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="whychooseus-card">
+                  <div class="whychooseus-card-image">
+                    <img src="./assets/whychooseus.png" alt="" />
+                    <a class="explore-more" href="">Explore More-></a>
+
+                  </div>
+                  <div class="whychooseus-card-content">
+                    <h1>User-Friendly Interface</h1>
+                    <p>
+                      Our intuitive interface is designed with ease of use in
+                      mind. Whether you’re a tech-savvy professional
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="whychooseus-card">
+                  <div class="whychooseus-card-image">
+                    <img src="./assets/whychooseus.png" alt="" />
+                    <a class="explore-more" href="">Explore More-></a>
+
+                  </div>
+                  <div class="whychooseus-card-content">
+                    <h1>User-Friendly Interface</h1>
+                    <p>
+                      Our intuitive interface is designed with ease of use in
+                      mind. Whether you’re a tech-savvy professional
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+              <swiper-slide>
+                <div class="whychooseus-card">
+                  <div class="whychooseus-card-image">
+                    <img src="./assets/whychooseus.png" alt="" />
+                    <a class="explore-more" href="">Explore More-></a>
+
+                  </div>
+                  <div class="whychooseus-card-content">
+                    <h1>User-Friendly Interface</h1>
+                    <p>
+                      Our intuitive interface is designed with ease of use in
+                      mind. Whether you’re a tech-savvy professional
+                    </p>
+                  </div>
+                </div>
+              </swiper-slide>
+            </swiper-container>
+
+            <div
+              class="swiper-navigation-container"
+              style="padding-top: 20px; display: flex; justify-content: center"
+            >
+              <div class="swiper-button-prev">
+                <i
+                  class="fa-solid fa-chevron-left"
+                  style="font-size: 30px; padding-right: 80px; color: #7991a4"
+                ></i>
+              </div>
+              <div class="swiper-button-next">
+                <i
+                  class="fa-solid fa-chevron-right"
+                  style="font-size: 30px; padding-left: 80px; color: #7991a4"
+                ></i>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!-- try it for free banner starts here -->
+<section class="tryitforfree_banner">
+  <div>
+    <div class="tryitforfree_banner_left">
+      <h1>Try it for free</h1>
+      <p>Clarity gives you the blocks & components you need to create a truly professional website, landing page or admin panel for your SaaS.</p>
+      <div class="tryitforfree_banner_left_btn">
+        <a class="tryitforfree_banner_left_btn1" href="">Start Building for Free</a>
+        <a class="tryitforfree_banner_left_btn2" href="">Explore All Blocks</a>
+      </div>
+    </div>
+    <div class="tryitforfree_banner_right">
+      <img src="./assets/Pink Minimalist Empowered Women Newsroom Quote Instagram Post 1.png" alt="">
+      <img class="union" src="./assets/Union.png" alt="">
+      <span class="union_text">Hey, it’s free for you!</span>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
 
     <script src="./script.js"></script>
-
+    <script>
+      $(document).ready(function () {
+        // Initialize Swiper with jQuery
+        const mySwiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          slidesPerView: 3,
+          loop: false, 
+        });
+      });
+    </script>
   </body>
 </html>
