@@ -1109,21 +1109,85 @@ button.active .fa-angle-up {
   font-style: normal;
   font-weight: 600;
 }
-.testimonial .testimonial_bottom{
+.testimonial .testimonial_bottom {
   padding-top: 40px;
 }
-.testimonial .testimonial_bottom .testimonial_card{
+.testimonial .testimonial_bottom .testimonial_card {
   padding: 10px;
   gap: 20px;
   max-width: 625px;
   display: flex;
 }
-.testimonial .testimonial_bottom  .star i{
-  color: #2563EB;
+.testimonial .testimonial_bottom .star i {
+  color: #2563eb;
 }
-.testimonial .card_content{
+.testimonial .card_content {
   padding: 20px;
 }
-.testimonial .card_content p{
+.testimonial .card_content p {
+  padding: 25px 0px;
+}
 
-padding: 25px 0px;}
+/* *******************************************trusted_by sectison starts here */
+.trusted_by {
+  max-width: 1280px;
+  margin: auto;
+  padding: 40px 0px 100px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+.trusted_by .trusted_by_left {
+  max-width: 550px;
+  margin: auto;
+}
+.trusted_by .trusted_by_left h1 {
+  color: var(--Base-02, #090914);
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+}
+.trusted_by .trusted_by_left p {
+  padding-top: 20px;
+  color: var(--gray-900, #18181b);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.trusted_by .trusted_by_right {
+  position: relative;
+}
+.trusted_by .trusted_by_right_blob {
+  position: relative;
+  width: 531px;
+  height: 435px;
+  flex-shrink: 0;
+  border-radius: var(--Radius-Sharp, 531px);
+  background: linear-gradient(
+    270deg,
+    rgba(192, 68, 68, 0.17) 29.04%,
+    rgba(238, 232, 68, 0.17) 73.18%,
+    rgba(255, 65, 65, 0.17) 86.41%,
+    rgba(115, 115, 115, 0.17) 99.64%
+  );
+  filter: blur(48px);
+}
+.trusted_by_right_logos {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.trusted_by_right_logos img {
+  text-align: center;
+  margin: auto;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  height: 50px;
+}
