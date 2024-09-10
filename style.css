@@ -1241,6 +1241,16 @@ button.active .fa-angle-up {
   font-weight: 400;
 }
 
+.footer_bottom_text{
+  padding: 4px;
+  color: var(--Neutral-500, #64748B);
+text-align: center;
+font-family: Inter;
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+}
+
 /* *******************************************newsletter sectison stars here */
 .newsletter {
   max-width: 1280px;
