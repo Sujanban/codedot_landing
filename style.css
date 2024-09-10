@@ -1195,9 +1195,9 @@ button.active .fa-angle-up {
 /* *******************************************footer sectison starts here */
 .footer {
   max-width: 1280px;
-  background: #FAFAFB;
+  background: #fafafb;
   margin: auto;
-  padding: 100px 0px;
+  padding: 40px 0px;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
@@ -1239,4 +1239,63 @@ button.active .fa-angle-up {
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+}
+
+/* *******************************************newsletter sectison stars here */
+.newsletter {
+  max-width: 1280px;
+  margin: auto;
+  padding: var(--Spacing-l, 28px) var(--Radius-xl, 36px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-radius: 4px;
+
+  background: #3b73c1;
+}
+.newsletter h1 {
+  color: var(--Shades-White, #fff);
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+}
+.newsletter p {
+  padding-top: 8px;
+  color: var(--Color-Text, rgba(255, 255, 255, 0.8));
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.newsletter form{
+  display: flex;
+  align-items: center;
+
+  border-radius: 4px;
+  width: 450px;
+  height: 48px;
+  background: #002E6E;
+}
+.newsletter form svg{
+  transform: scale(1.5);
+  margin: 0px 20px;
+}
+.newsletter form input{
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  color: white;
+  outline: none;
+  border: none;
+}
+.newsletter form input::placeholders{
+  color: rgb(231, 235, 255);
+}
+.newsletter form button{
+  margin-right: 5px;
+  padding: 10px 25px;
+  border-radius: 4px;
+
+
 }
