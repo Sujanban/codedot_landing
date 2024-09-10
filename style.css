@@ -1191,3 +1191,52 @@ button.active .fa-angle-up {
   border-radius: 10px;
   height: 50px;
 }
+
+/* *******************************************footer sectison starts here */
+.footer {
+  max-width: 1280px;
+  background: #FAFAFB;
+  margin: auto;
+  padding: 100px 0px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer .footer_left {
+  /* display: grid;
+  gap: 20px; */
+}
+.footer h1 {
+  font-size: 16px;
+}
+.footer .footer_left p {
+  max-width: 396px;
+  padding: 20px 0px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+.footer .footer_left .socials {
+  display: flex;
+  gap: 12px;
+}
+.footer .footer_left .socials i {
+  color: #000;
+}
+
+.footer .footer_right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.footer_right .footer_links {
+  padding-top: 20px;
+  display: grid;
+  gap: 12px;
+}
+.footer_right .footer_links a {
+  color: #18181b;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
