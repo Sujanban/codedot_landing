@@ -915,3 +915,92 @@ button.active .fa-angle-up {
   background-color: #18181b;
   color: white;
 }
+
+/* **********************************************joinus section starts here***************************** */
+.joinus {
+  padding: 100px 0px;
+  background-color: #0f172a;
+  /* color: #94a3b8; */
+}
+.joinus_wrapper {
+  max-width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.joinus_top {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.joinus_top img {
+  width: 500px;
+  border-radius: 10px;
+}
+.joinus_buttom {
+  max-width: 440px;
+  margin: auto;
+}
+.joinus_buttom h1 {
+  color: #ffffff !important;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+}
+.joinus_buttom p {
+  color: var(--blue-gray-400, #94a3b8);
+  padding: 20px 0px;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.joinus_buttom form {
+  color: #94a3b8;
+  display: grid;
+  gap: 20px;
+}
+.joinus_buttom form div {
+  display: grid;
+  gap: 12px;
+}
+.joinus_buttom form label {
+  color: var(--gray-200, #e4e4e7);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.joinus_buttom form input {
+  background-color: transparent;
+  padding: 20px 20px;
+  border-radius: 50px;
+  border: 1px solid #94a3b8;
+  color: #94a3b8;
+}
+.joinus .enquiry_button_wrapper{
+  display: flex !important;
+}
+.joinus_buttom form .enquiry_button {
+  outline: none;
+  padding: 18px 20px;
+  border-radius: 50px;
+  border: 1px solid #94a3b8;
+  color: #94a3b8;
+  background-color: #2563eb;
+  font-size: 16px;
+  font-style: normal;
+  color: white !important;
+  font-weight: 600;
+}
+
+.joinus_buttom h5{
+  padding: 20px 0px;
+  color: var(--blue-gray-500, #64748B);
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+}
+.joinus_buttom h5 a{
+  color: #2563EB;
+}
