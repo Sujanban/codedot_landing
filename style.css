@@ -608,3 +608,310 @@ button.active .fa-angle-up {
   left: 33px;
   rotate: 5deg;
 }
+
+/* ***********************************************mockup_section************************************** */
+.mockup_section {
+  max-width: 1280px;
+  margin: auto;
+  padding: 80px 0px;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+.mockup_section .mockup_section_left {
+  padding: 40px 0px;
+  max-width: 420px;
+}
+.mockup_section .mockup_section_left h1 {
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 55px;
+}
+
+.mockup_section .mockup_section_left p {
+  padding: 24px 0px;
+  color: var(--Neutral-Gray-600, #475569);
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.mockup_section .mockup_section_left form {
+  display: flex;
+  gap: 12px;
+}
+.mockup_section .mockup_section_left form input {
+  padding: 12px;
+}
+.mockup_section .mockup_section_left form input:nth-last-child(1) {
+  border-radius: 5px;
+  background: var(--Primary-Blue-500, #1d4ed8);
+  border: none;
+  padding: 0px 20px;
+  color: white;
+}
+
+.mockup_section .mockup_section_right {
+  position: relative;
+}
+
+.mockup_section .mockup_section_right img:nth-child(1) {
+  max-width: 800px;
+}
+.mockup_section .mockup_section_right img:nth-child(2) {
+  position: absolute;
+  left: -150px;
+  top: 15%;
+}
+
+/* ***********************************************integration section starts here************************************** */
+.integration {
+  padding: 100px 0px;
+  max-width: 1280px;
+  margin: auto;
+  text-align: center;
+}
+.integration .integration_top {
+  display: grid;
+  gap: 12px;
+}
+.integration .integration_top span {
+  color: var(--Primary-700, #6941c6);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.integration .integration_top h1 {
+  color: var(--Gray-900, #101828);
+  text-align: center;
+  /* Display md/Semibold */
+  font-family: Inter;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.integration .integration_top p {
+  max-width: 770px;
+  margin: auto;
+  color: var(--Gray-500, #667085);
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.integration .integration_buttom {
+  max-width: 850px;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 20px;
+}
+
+/* ***********************************************feature section starts here************************************** */
+.feature,
+.pricing {
+  max-width: 1280px;
+  margin: auto;
+  padding: 100px 0px;
+}
+
+.feature .feature_top {
+  max-width: 770px;
+  margin: auto;
+  text-align: center;
+  display: grid;
+  gap: 12px;
+}
+
+.feature .feature_top h1 {
+  color: var(--Base-02, #090914);
+  text-align: center;
+  font-family: Inter;
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 600;
+}
+
+.feature .feature_top p {
+  color: var(--gray-900, #18181b);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.tabs {
+  padding-top: 40px;
+  max-width: 900px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-bottom: 20px;
+}
+
+.tab {
+  color: #a1a1aa;
+  font-size: 13px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 18px;
+  letter-spacing: 1px;
+
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+}
+
+.tab.active {
+  color: #2563eb;
+  border-bottom: 1px solid #2563eb;
+}
+
+.tab-content {
+  display: flex;
+  justify-content: center;
+}
+
+.tab-image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.tab-image.active-image {
+  display: block;
+}
+
+/* ***********************************************pricing section starts here************************************** */
+.pricing_top {
+  text-align: center;
+  display: grid;
+  gap: 12px;
+}
+.pricing_top h1 {
+  color: #2c0872;
+  text-align: center;
+  font-family: Inter;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 66px;
+}
+
+.pricing_top p {
+  color: var(--gray-400, #a1a1aa);
+  text-align: center;
+  /* Regular/18px */
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 28px;
+}
+
+.pricing_buttom {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.pricing_buttom .card {
+  max-width: 360px;
+  display: grid;
+  gap: 20px;
+  padding: 22px;
+  border-radius: 14px;
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
+}
+.pricing_buttom .card2 {
+  color: white !important;
+  background: linear-gradient(160deg, #094394 1.29%, #00bebd 101.35%);
+}
+.pricing_buttom .card3 {
+  color: white !important;
+  background: linear-gradient(180deg, #009ff5 0%, #005d8f 100%);
+}
+.pricing_buttom .card li i {
+  color: #00cb07;
+}
+.pricing_buttom .card2 .price sub {
+  color: white !important;
+}
+.pricing_buttom .card3 .price sub {
+  color: white !important;
+}
+
+.pricing_buttom .card span {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+.pricing_buttom .price {
+  display: flex;
+}
+.pricing_buttom .price sub {
+  color: var(--gray-500, #71717a);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+.pricing_buttom .price h1 {
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pricing_buttom .card span {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.pricing_buttom .card ul {
+  padding: 12px 0px;
+  display: grid;
+  gap: 20px;
+  border-top: 1px solid #27272a;
+}
+.pricing_buttom .card ul li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+.pricing_buttom .card a {
+  padding: 16px;
+  text-align: center;
+  width: 100%;
+  border-radius: 5px;
+  border: var(--Radius-Sharp, 1px) solid var(--Gradient-01, #6ddcff);
+  color: black;
+  background: rgba(0, 159, 245, 0.3);
+}
+.pricing_buttom .card2 a {
+  background-color: #094394;
+  color: white;
+}
+.pricing_buttom .card3 a {
+  background-color: #18181b;
+  color: white;
+}
