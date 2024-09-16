@@ -7,6 +7,15 @@
   font-family: "Inter", sans-serif;
 }
 
+@keyframes moveLeftRight {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 100px; /* Move 100px to the right */
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -413,6 +422,7 @@ button.active .fa-angle-up {
   font-weight: 600;
 }
 .whychooseus-heading {
+  padding-top: 14px;
   margin: 18px;
   font-size: 37px;
   font-style: normal;
@@ -434,8 +444,8 @@ button.active .fa-angle-up {
 }
 
 .whychooseus .whychooseus-card {
-  margin: 10px;
-  width: 370px;
+  /* margin: 10px; */
+  /* width: 370px; */
   padding: 20px;
   border-radius: 11px;
   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.13);
@@ -655,6 +665,8 @@ button.active .fa-angle-up {
 
 .mockup_section .mockup_section_right {
   position: relative;
+  padding: 20px;
+  overflow: hidden;
 }
 
 .mockup_section .mockup_section_right img:nth-child(1) {
@@ -707,7 +719,7 @@ button.active .fa-angle-up {
 }
 
 .integration .integration_buttom {
-  max-width: 850px;
+  max-width: 900px;
   margin: auto;
   margin-top: 40px;
   display: grid;
@@ -927,6 +939,7 @@ button.active .fa-angle-up {
   margin: auto;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 .joinus_top {
   width: 100%;
@@ -935,11 +948,12 @@ button.active .fa-angle-up {
   justify-content: center;
 }
 .joinus_top img {
-  width: 500px;
+  width: 100%;
+  /* max-width: 500px; */
   border-radius: 10px;
 }
 .joinus_buttom {
-  max-width: 440px;
+  max-width: 480px;
   margin: auto;
 }
 .joinus_buttom h1 {
@@ -1241,14 +1255,14 @@ button.active .fa-angle-up {
   font-weight: 400;
 }
 
-.footer_bottom_text{
+.footer_bottom_text {
   padding: 4px;
-  color: var(--Neutral-500, #64748B);
-text-align: center;
-font-family: Inter;
-font-size: 14px;
-font-style: normal;
-font-weight: 500;
+  color: var(--Neutral-500, #64748b);
+  text-align: center;
+  font-family: Inter;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 /* *******************************************newsletter sectison stars here */
@@ -1278,20 +1292,20 @@ font-weight: 500;
   font-weight: 400;
 }
 
-.newsletter form{
+.newsletter form {
   display: flex;
   align-items: center;
 
   border-radius: 4px;
   width: 450px;
   height: 48px;
-  background: #002E6E;
+  background: #002e6e;
 }
-.newsletter form svg{
+.newsletter form svg {
   transform: scale(1.5);
   margin: 0px 20px;
 }
-.newsletter form input{
+.newsletter form input {
   background-color: transparent;
   width: 100%;
   height: 100%;
@@ -1299,13 +1313,96 @@ font-weight: 500;
   outline: none;
   border: none;
 }
-.newsletter form input::placeholders{
+.newsletter form input::placeholders {
   color: rgb(231, 235, 255);
 }
-.newsletter form button{
+.newsletter form button {
   margin-right: 5px;
   padding: 10px 25px;
   border-radius: 4px;
+}
 
+/* media query starts here */
+@media screen and (max-width: 768px) {
+  .trusted_by {
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
 
+  .tryitforfree_banner,
+  .integration,
+  .feature {
+    margin: auto 20px !important;
+  }
+
+  .tryitforfree_banner_right {
+    display: none;
+  }
+  .mockup_section {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .mockup_section .mockup_section_left {
+    margin: auto;
+  }
+  .mockup_section_right {
+    margin: auto;
+    overflow: hidden;
+  }
+  .mockup_section_right img:nth-child(1) {
+    width: 500px;
+  }
+  .mockup_section_right img:nth-child(2) {
+    /* display: none; */
+    width: 500px;
+  }
+
+  .integration {
+    padding: auto 20px;
+  }
+  .integration_buttom {
+    display: flex !important;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .integration_buttom img {
+    width: 50px;
+  }
+
+  .pricing_buttom {
+    flex-wrap: wrap;
+  }
+
+  .joinus_wrapper {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .joinus_top {
+    display: none;
+  }
+  .joinus_buttom {
+    margin: auto 20px;
+  }
+
+  .newsletter {
+    display: flex !important;
+    flex-wrap: wrap;
+  }
+
+  .footer {
+    padding: 20px;
+    grid-template-columns: 1fr;
+  }
+  .footer .footer_right {
+    padding-top: 20px;
+    display: flex !important;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  header {
+    display: none !important;
+  }
 }

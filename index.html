@@ -13,620 +13,1185 @@
       referrerpolicy="no-referrer"
     />
 
+    <!-- AOS stylesheet -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Include jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-    <!-- Include Swiper JS -->
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@6.4.8/swiper-bundle.min.css"
+    />
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <title>CodeDot</title>
   </head>
   <body>
     <!-- header section starts here -->
-    <header>
-      <div class="header-left">
-        <a href="/">
-          <img src="./assets/logo.png" alt="Logo" />
-        </a>
-        <nav>
-          <!-- Manage Dropdown -->
-          <div class="dropdown">
-            <button id="manageButton">
-              <span>Manage</span>
-              <i class="fa-solid fa-angle-up"></i>
-            </button>
-            <div id="manageDropdown" class="dropdown-content">
-              <h1>Manage</h1>
-              <div class="dropdown-menu-wrapper">
-                <div class="dropdown-menu">
-                  <!-- manage menu section left -->
-                  <div class="dropdown-menu-item">
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo7.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Task Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
+    <div>
+      <header
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-out"
+      >
+        <div class="header-left">
+          <a href="/">
+            <img src="./assets/logo.png" alt="Logo" />
+          </a>
+          <nav>
+            <!-- Manage Dropdown -->
+            <div class="dropdown">
+              <button id="manageButton">
+                <span>Manage</span>
+                <i class="fa-solid fa-angle-up"></i>
+              </button>
+              <div id="manageDropdown" class="dropdown-content">
+                <h1>Manage</h1>
+                <div class="dropdown-menu-wrapper">
+                  <div class="dropdown-menu">
+                    <!-- manage menu section left -->
+                    <div class="dropdown-menu-item">
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo7.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Task Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
 
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
                         </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo10.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Agent Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              22 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo4.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Role Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              33 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo5.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Document Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              44 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo9.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Application Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              55 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
                         </div>
                       </div>
                     </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo10.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Agent Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            22 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
+
+                    <!-- manage menu section right -->
+                    <div class="dropdown-menu-item">
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo11.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Progress Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div class="dropdown-item-hover2">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed toation. To make the content look more
+                              professional and on point, you can use markdown
+                              elements to format the with formatting, please let
+                              me know.
+                            </p>
+                            <a
+                              style="
+                                color: #009ff5;
+                                padding: 6px 8px;
+                                margin-bottom: 10px;
+                              "
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo4.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Role Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            33 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo12.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Client Record Management</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div class="dropdown-item-hover2">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed to streamline collaborars and various
+                              branches, fostering seamless communication and
+                              efficient task allocation. One standout capability
+                              is the ability to tag clients to also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <a
+                              style="
+                                color: #009ff5;
+                                padding: 6px 8px;
+                                margin-bottom: 10px;
+                              "
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo5.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Document Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            44 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo9.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Application Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            55 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo7.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Advance Reporting</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div class="dropdown-item-hover2">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace.standout
+                              capability is the ability to tag clients to
+                              specific tasks, providing a clear link between ass
+                            </p>
+                            <a
+                              style="
+                                color: #009ff5;
+                                padding: 6px 8px;
+                                margin-bottom: 10px;
+                              "
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
 
-                  <!-- manage menu section right -->
-                  <div class="dropdown-menu-item">
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo11.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Progress Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div class="dropdown-item-hover2">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            toation. To make the content look more professional
-                            and on point, you can use markdown elements to
-                            format the with formatting, please let me know.
-                          </p>
-                          <a
-                            style="
-                              color: #009ff5;
-                              padding: 6px 8px;
-                              margin-bottom: 10px;
-                            "
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
+                  <div class="dropdown-image">
+                    <div>
+                      <img src="./assets//image 4.png" alt="" />
+                      <h1>What we offer</h1>
+                      <ul>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
                           >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo12.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Client Record Management</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div class="dropdown-item-hover2">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            to streamline collaborars and various branches,
-                            fostering seamless communication and efficient task
-                            allocation. One standout capability is the ability
-                            to tag clients to also facilitates transparent
-                            communication regarding project progress and
-                            outcomes.
-                          </p>
-                          <a
-                            style="
-                              color: #009ff5;
-                              padding: 6px 8px;
-                              margin-bottom: 10px;
-                            "
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
+                            <path
+                              d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
+                              fill="#15B097"
+                            />
+                          </svg>
+                          <p>Education Counselors</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
                           >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo7.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Advance Reporting</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div class="dropdown-item-hover2">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace.standout capability is the
-                            ability to tag clients to specific tasks, providing
-                            a clear link between ass
-                          </p>
-                          <a
-                            style="
-                              color: #009ff5;
-                              padding: 6px 8px;
-                              margin-bottom: 10px;
-                            "
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
+                            <path
+                              d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
+                              fill="#15B097"
+                            />
+                          </svg>
+                          <p>Education and Migration agency</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
                           >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
+                            <path
+                              d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
+                              fill="#15B097"
+                            />
+                          </svg>
+                          <p>Business Growth</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                          >
+                            <path
+                              d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
+                              fill="#15B097"
+                            />
+                          </svg>
+                          <p>Boosting Productivity</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                          >
+                            <path
+                              d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
+                              fill="#15B097"
+                            />
+                          </svg>
+                          <p>Streamlined Workflow</p>
+                        </li>
+                        <li>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="18"
+                            height="18"
+                            viewBox="0 0 18 18"
+                            fill="none"
+                          >
+                            <path
+                              d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
+                              fill="#15B097"
+                            />
+                          </svg>
+                          <p>Agencies</p>
+                        </li>
+                      </ul>
+                      <a class="enjoy-our-free-trial" href=""
+                        >Enjoy our free Trial</a
+                      >
                     </div>
                   </div>
                 </div>
+              </div>
+            </div>
 
-                <div class="dropdown-image">
+            <!-- Features Dropdown -->
+            <div class="dropdown">
+              <button id="featuresButton">
+                <span>Features</span>
+                <i class="fa-solid fa-angle-up"></i>
+              </button>
+              <div id="featuresDropdown" class="dropdown-content">
+                <h1>Features</h1>
+                <div class="dropdown-menu-wrapper">
+                  <div class="dropdown-menu">
+                    <!-- feature menu section left -->
+                    <div class="dropdown-menu-item">
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo1.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Collaboration</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo2.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Sales Forecast</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              22 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo3.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Reporting</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              33 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo4.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Invoice</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              44 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo5.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Payment Schedule</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+                        <div class="dropdown-item-hover1">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              55 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity within your workspace. With this
+                              feature, users can effortlessly assign tasks to
+                              team members and various branches, fostering
+                              seamless communication and efficient task
+                              allocation.
+                            </p>
+                            <p>
+                              One standout capability is the ability to tag
+                              clients to specific tasks, providing a clear link
+                              between assignments and associated clients. This
+                              not only simplifies tracking but also facilitates
+                              transparent communication regarding project
+                              progress and outcomes.
+                            </p>
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              text. For example, you can use headings to
+                              organize the content into sections, use bullet
+                              points to list the features of the Task Manager,
+                              and use bolding to highlight important
+                              information. You can also use code blocks to
+                              display code snippets or other formatted content.
+                              If you need further assistance with formatting,
+                              please let me know.
+                            </p>
+                            <a
+                              style="color: #009ff5; padding: 6px 8px"
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- manage menu section right -->
+                    <div class="dropdown-menu-item">
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo6.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Email System</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div style="left: 673px" class="dropdown-item-hover2">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              To make the content look more professional and on
+                              point, you can use markdown elements to format the
+                              with formatting, please let me know.
+                            </p>
+                            <a
+                              style="
+                                color: #009ff5;
+                                padding: 6px 8px;
+                                margin-bottom: 10px;
+                              "
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo7.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Document Checklist</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div style="left: 673px" class="dropdown-item-hover2">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed to streamline collaborars and various
+                              branches, fostering seamless communication and
+                              efficient task allocastandout capability is the
+                              ability to tag clientsation regarding project
+                              progress and outcomes.
+                            </p>
+                            <a
+                              style="
+                                color: #009ff5;
+                                padding: 6px 8px;
+                                margin-bottom: 10px;
+                              "
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="dropdown-item-relative">
+                        <a href="" class="dropdown-item">
+                          <div class="icon">
+                            <img src="./assets/menuitemlogo7.png" alt="" />
+                          </div>
+                          <div>
+                            <h1>Advance Reporting</h1>
+                            <p>This Will Help to Manage Your Task</p>
+                            <img
+                              class="active-arrow"
+                              style="
+                                position: absolute;
+                                right: -6px;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                filter: drop-shadow(
+                                  -1px 0px 2px rgba(0, 0, 0, 0.3)
+                                );
+                              "
+                              src="./assets/Polygon.png"
+                              alt=""
+                            />
+                          </div>
+                        </a>
+
+                        <div style="left: 673px" class="dropdown-item-hover2">
+                          <div class="dropdown-item-hover-content">
+                            <p>
+                              11 Task Manager feature is a powerful tool
+                              designed to streamline collaboration and enhance
+                              productivity standout capability is the ability to
+                              tag clients to specific tasks, providing a clear
+                              link between ass
+                            </p>
+                            <a
+                              style="
+                                color: #009ff5;
+                                padding: 6px 8px;
+                                margin-bottom: 10px;
+                              "
+                              class="readmore_btn"
+                              href=""
+                              >Read More</a
+                            >
+                          </div>
+                          <div class="dropdown-item-hover-cards">
+                            <img class="card1" src="./assets/card.png" alt="" />
+                            <img class="card2" src="./assets/card.png" alt="" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                   <div>
-                    <img src="./assets//image 4.png" alt="" />
-                    <h1>What we offer</h1>
-                    <ul>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
-                            fill="#15B097"
-                          />
-                        </svg>
-                        <p>Education Counselors</p>
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
-                            fill="#15B097"
-                          />
-                        </svg>
-                        <p>Education and Migration agency</p>
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
-                            fill="#15B097"
-                          />
-                        </svg>
-                        <p>Business Growth</p>
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
-                            fill="#15B097"
-                          />
-                        </svg>
-                        <p>Boosting Productivity</p>
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
-                            fill="#15B097"
-                          />
-                        </svg>
-                        <p>Streamlined Workflow</p>
-                      </li>
-                      <li>
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="18"
-                          height="18"
-                          viewBox="0 0 18 18"
-                          fill="none"
-                        >
-                          <path
-                            d="M9 1.5C4.8675 1.5 1.5 4.8675 1.5 9C1.5 13.1325 4.8675 16.5 9 16.5C13.1325 16.5 16.5 13.1325 16.5 9C16.5 4.8675 13.1325 1.5 9 1.5ZM12.585 7.275L8.3325 11.5275C8.2275 11.6325 8.085 11.6925 7.935 11.6925C7.785 11.6925 7.6425 11.6325 7.5375 11.5275L5.415 9.405C5.1975 9.1875 5.1975 8.8275 5.415 8.61C5.6325 8.3925 5.9925 8.3925 6.21 8.61L7.935 10.335L11.79 6.48C12.0075 6.2625 12.3675 6.2625 12.585 6.48C12.8025 6.6975 12.8025 7.05 12.585 7.275Z"
-                            fill="#15B097"
-                          />
-                        </svg>
-                        <p>Agencies</p>
-                      </li>
-                    </ul>
+                    <div class="dropdown-image-feature">
+                      <img src="./assets/image 4-1.png" alt="" />
+                      <div>
+                        <h5>
+                          See What CRM Service can do for your Support teams See
+                          What CRM Service can do for your Support teams
+                        </h5>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="try-crm-for-free">
+                    <h1>Try CRM for Free</h1>
                     <a class="enjoy-our-free-trial" href=""
                       >Enjoy our free Trial</a
                     >
@@ -634,539 +1199,17 @@
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Features Dropdown -->
-          <div class="dropdown">
-            <button id="featuresButton">
-              <span>Features</span>
-              <i class="fa-solid fa-angle-up"></i>
-            </button>
-            <div id="featuresDropdown" class="dropdown-content">
-              <h1>Features</h1>
-              <div class="dropdown-menu-wrapper">
-                <div class="dropdown-menu">
-                  <!-- feature menu section left -->
-                  <div class="dropdown-menu-item">
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo1.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Collaboration</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo2.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Sales Forecast</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            22 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo3.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Reporting</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            33 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo4.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Invoice</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            44 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo5.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Payment Schedule</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-                      <div class="dropdown-item-hover1">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            55 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            within your workspace. With this feature, users can
-                            effortlessly assign tasks to team members and
-                            various branches, fostering seamless communication
-                            and efficient task allocation.
-                          </p>
-                          <p>
-                            One standout capability is the ability to tag
-                            clients to specific tasks, providing a clear link
-                            between assignments and associated clients. This not
-                            only simplifies tracking but also facilitates
-                            transparent communication regarding project progress
-                            and outcomes.
-                          </p>
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            text. For example, you can use headings to organize
-                            the content into sections, use bullet points to list
-                            the features of the Task Manager, and use bolding to
-                            highlight important information. You can also use
-                            code blocks to display code snippets or other
-                            formatted content. If you need further assistance
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="color: #009ff5; padding: 6px 8px"
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- manage menu section right -->
-                  <div class="dropdown-menu-item">
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo6.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Email System</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div style="left: 673px" class="dropdown-item-hover2">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            To make the content look more professional and on
-                            point, you can use markdown elements to format the
-                            with formatting, please let me know.
-                          </p>
-                          <a
-                            style="
-                              color: #009ff5;
-                              padding: 6px 8px;
-                              margin-bottom: 10px;
-                            "
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo7.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Document Checklist</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div style="left: 673px" class="dropdown-item-hover2">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            to streamline collaborars and various branches,
-                            fostering seamless communication and efficient task
-                            allocastandout capability is the ability to tag
-                            clientsation regarding project progress and
-                            outcomes.
-                          </p>
-                          <a
-                            style="
-                              color: #009ff5;
-                              padding: 6px 8px;
-                              margin-bottom: 10px;
-                            "
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                    <div class="dropdown-item-relative">
-                      <a href="" class="dropdown-item">
-                        <div class="icon">
-                          <img src="./assets/menuitemlogo7.png" alt="" />
-                        </div>
-                        <div>
-                          <h1>Advance Reporting</h1>
-                          <p>This Will Help to Manage Your Task</p>
-                          <img
-                            class="active-arrow"
-                            style="
-                              position: absolute;
-                              right: -6px;
-                              top: 50%;
-                              transform: translateY(-50%);
-                              filter: drop-shadow(
-                                -1px 0px 2px rgba(0, 0, 0, 0.3)
-                              );
-                            "
-                            src="./assets/Polygon.png"
-                            alt=""
-                          />
-                        </div>
-                      </a>
-
-                      <div style="left: 673px" class="dropdown-item-hover2">
-                        <div class="dropdown-item-hover-content">
-                          <p>
-                            11 Task Manager feature is a powerful tool designed
-                            to streamline collaboration and enhance productivity
-                            standout capability is the ability to tag clients to
-                            specific tasks, providing a clear link between ass
-                          </p>
-                          <a
-                            style="
-                              color: #009ff5;
-                              padding: 6px 8px;
-                              margin-bottom: 10px;
-                            "
-                            class="readmore_btn"
-                            href=""
-                            >Read More</a
-                          >
-                        </div>
-                        <div class="dropdown-item-hover-cards">
-                          <img class="card1" src="./assets/card.png" alt="" />
-                          <img class="card2" src="./assets/card.png" alt="" />
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div>
-                  <div class="dropdown-image-feature">
-                    <img src="./assets/image 4-1.png" alt="" />
-                    <div>
-                      <h5>
-                        See What CRM Service can do for your Support teams See
-                        What CRM Service can do for your Support teams
-                      </h5>
-                    </div>
-                  </div>
-                </div>
-
-                <div class="try-crm-for-free">
-                  <h1>Try CRM for Free</h1>
-                  <a class="enjoy-our-free-trial" href=""
-                    >Enjoy our free Trial</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <a href="">Pricing</a>
-          <a href="">Learn</a>
-        </nav>
-      </div>
-      <div class="header-right">
-        <a href="">Sign in</a>
-        <a href="">Log in</a>
-      </div>
-    </header>
+            <a href="">Pricing</a>
+            <a href="">Learn</a>
+          </nav>
+        </div>
+        <div class="header-right">
+          <a href="">Sign in</a>
+          <a href="">Log in</a>
+        </div>
+      </header>
+    </div>
     <!-- header section ends here -->
 
     <!-- hero section starts here -->
@@ -1191,14 +1234,117 @@
         </swiper-slide>
       </swiper-container>
     </section>
-    <!-- hero section ends here -->
+
+    <!-- trusted by section starts here -->
+    <section class="trusted_by">
+      <div class="trusted_by_left">
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Trusted by
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+        >
+          Clarity gives you the blocks & components you need to create a truly
+          professional website, landing page or admin panel for your SaaS.
+        </p>
+      </div>
+      <div class="trusted_by_right">
+        <div class="trusted_by_right_blob"></div>
+        <div class="trusted_by_right_logos">
+          <img
+            class="animateimage1"
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            src="https://cdn.prod.website-files.com/6312535109af3402143e250c/6312535109af34b7653e2519_amazon_-%20logo-300x119.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="300"
+            data-aos-easing="ease-in-out"
+            src="https://i.pinimg.com/originals/20/60/2d/20602d43cc993811e5a6bd1886af4f33.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            src="https://1000logos.net/wp-content/uploads/2021/05/Mango-logo.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+            data-aos-easing="ease-in-out"
+            src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease-in-out"
+            src="https://logos-world.net/wp-content/uploads/2020/09/New-Balance-Logo.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="700"
+            data-aos-easing="ease-in-out"
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Whirlpool_Corporation_Logo.png/320px-Whirlpool_Corporation_Logo.png"
+            alt=""
+          />
+          <img
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="400"
+            data-aos-easing="ease-in-out"
+            src="https://lh4.googleusercontent.com/proxy/U-auDdr77a3QQmkisl75XS6v8-it01RuwJ_vjHv6ygssYQPnQWGIdmtcAptZc9L_dVWygLL_Q1zvV-9ls2AgRPuyo9bcEyjo0RReHg60zTumSMoM"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
 
     <!-- why choose us section starts here -->
     <section class="whychooseus">
       <div>
-        <span class="whychooseus-span">Why Choose Us</span>
-        <h1 class="whychooseus-heading">Comprehensive Customer Insights</h1>
-        <p class="whychooseus-para">
+        <span
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="whychooseus-span"
+          >Why Choose Us</span
+        >
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="whychooseus-heading"
+        >
+          Comprehensive Customer Insights
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="whychooseus-para"
+        >
           Gain a 360-degree view of your customers with our CRM. Track every
           interaction, from initial contact to final sale, and build deeper
           relationships based on data-driven insights.
@@ -1211,9 +1357,16 @@
               slides-per-view="3"
               pagination="false"
               navigation="true"
+              loop="true"
             >
               <swiper-slide>
-                <div class="whychooseus-card">
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="whychooseus-card"
+                >
                   <div class="whychooseus-card-image">
                     <img src="./assets/whychooseus.png" alt="" />
                     <a class="explore-more" href="">Explore More-></a>
@@ -1228,7 +1381,13 @@
                 </div>
               </swiper-slide>
               <swiper-slide>
-                <div class="whychooseus-card">
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="whychooseus-card"
+                >
                   <div class="whychooseus-card-image">
                     <img src="./assets/whychooseus.png" alt="" />
                     <a class="explore-more" href="">Explore More-></a>
@@ -1243,7 +1402,13 @@
                 </div>
               </swiper-slide>
               <swiper-slide>
-                <div class="whychooseus-card">
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="whychooseus-card"
+                >
                   <div class="whychooseus-card-image">
                     <img src="./assets/whychooseus.png" alt="" />
                     <a class="explore-more" href="">Explore More-></a>
@@ -1258,7 +1423,13 @@
                 </div>
               </swiper-slide>
               <swiper-slide>
-                <div class="whychooseus-card">
+                <div
+                  data-aos="fade-right"
+                  data-aos-delay="400"
+                  data-aos-duration="1000"
+                  data-aos-easing="ease-in-out"
+                  class="whychooseus-card"
+                >
                   <div class="whychooseus-card-image">
                     <img src="./assets/whychooseus.png" alt="" />
                     <a class="explore-more" href="">Explore More-></a>
@@ -1296,56 +1467,22 @@
       </div>
     </section>
 
-    <!-- trusted by section starts here -->
-    <section class="trusted_by">
-      <div class="trusted_by_left">
-        <h1>Trusted by</h1>
-        <p>
-          Clarity gives you the blocks & components you need to create a truly
-          professional website, landing page or admin panel for your SaaS.
-        </p>
-      </div>
-      <div class="trusted_by_right">
-        <div class="trusted_by_right_blob"></div>
-        <div class="trusted_by_right_logos">
-          <img
-            src="https://cdn.prod.website-files.com/6312535109af3402143e250c/6312535109af34b7653e2519_amazon_-%20logo-300x119.png"
-            alt=""
-          />
-          <img
-            src="https://i.pinimg.com/originals/20/60/2d/20602d43cc993811e5a6bd1886af4f33.png"
-            alt=""
-          />
-          <img
-            src="https://1000logos.net/wp-content/uploads/2021/05/Mango-logo.png"
-            alt=""
-          />
-          <img
-            src="https://purepng.com/public/uploads/large/purepng.com-disney-logologobrand-logoiconslogos-251519939495wtv86.png"
-            alt=""
-          />
-          <img
-            src="https://logos-world.net/wp-content/uploads/2020/09/New-Balance-Logo.png"
-            alt=""
-          />
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Whirlpool_Corporation_Logo.png/320px-Whirlpool_Corporation_Logo.png"
-            alt=""
-          />
-          <img
-            src="https://lh4.googleusercontent.com/proxy/U-auDdr77a3QQmkisl75XS6v8-it01RuwJ_vjHv6ygssYQPnQWGIdmtcAptZc9L_dVWygLL_Q1zvV-9ls2AgRPuyo9bcEyjo0RReHg60zTumSMoM"
-            alt=""
-          />
-        </div>
-      </div>
-    </section>
-
     <!-- try it for free banner starts here -->
     <section class="tryitforfree_banner">
       <div>
         <div class="tryitforfree_banner_left">
-          <h1>Try it for free</h1>
-          <p>
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="200"
+            data-aos-easing="ease-in-out"
+          >
+            Try it for free
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             Clarity gives you the blocks & components you need to create a truly
             professional website, landing page or admin panel for your SaaS.
           </p>
@@ -1353,7 +1490,14 @@
             <a class="tryitforfree_banner_left_btn1" href=""
               >Start Building for Free</a
             >
-            <a class="tryitforfree_banner_left_btn2" href=""
+            <a
+              data-aos="fade-left"
+              data-aos-delay=""
+              data-aos-offset="0"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+              class="tryitforfree_banner_left_btn2"
+              href=""
               >Explore All Blocks</a
             >
           </div>
@@ -1363,8 +1507,23 @@
             src="./assets/Pink Minimalist Empowered Women Newsroom Quote Instagram Post 1.png"
             alt=""
           />
-          <img class="union" src="./assets/Union.png" alt="" />
-          <span class="union_text">Hey, it’s free for you!</span>
+          <div class="move_left_right">
+            <img
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              class="union"
+              src="./assets/Union.png"
+              alt=""
+            />
+            <span
+              data-aos="fade-down"
+              data-aos-duration="500"
+              data-aos-easing="ease-in-out"
+              class="union_text"
+              >Hey, it’s free for you!</span
+            >
+          </div>
         </div>
       </div>
     </section>
@@ -1372,28 +1531,84 @@
     <!-- mockup section -->
     <section class="mockup_section">
       <div class="mockup_section_left">
-        <h1>Manage your freelance business with this suit</h1>
-        <p>
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Manage your freelance business with this suit
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-offset="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           It is a long established fact that a reader will be distracted by the
           readable content of a page when looking at its layout.
         </p>
         <form action="">
-          <input type="text" placeholder="Enter your email" />
-          <input type="submit" value="Get Started->" />
+          <input
+            data-aos="fade-right"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            type="text"
+            placeholder="Enter your email"
+          />
+          <input
+            data-aos="fade-left"
+            data-aos-offset="200"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            type="submit"
+            value="Get Started->"
+          />
         </form>
       </div>
       <div class="mockup_section_right">
-        <img src="./assets/Browser Frame.png" alt="" />
-        <img src="./assets/Mockup.png" alt="" />
+        <img
+          data-aos="fade-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/Browser Frame.png"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-delay="300"
+          data-aos-easing="ease-in-out"
+          src="./assets/Mockup.png"
+          alt=""
+        />
       </div>
     </section>
 
     <!-- integration section starts here -->
     <section class="integration">
       <div class="integration_top">
-        <span>Integrations</span>
-        <h1>Get more value from our tools</h1>
-        <p>
+        <span
+          data-aos="fade-up"
+          data-aos-delay=""
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          >Integrations</span
+        >
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Get more value from our tools
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Connect your tools, connect your teams. With over 200 apps already
           available in our directory, your team’s favourite tools are just a
           click away.
@@ -1401,52 +1616,240 @@
       </div>
 
       <div class="integration_buttom">
-        <img src="./assets/notion.svg" alt="" />
-        <img src="./assets/slack.svg" alt="" />
-        <img src="./assets/zapier.svg" alt="" />
-        <img src="./assets/dropbox.svg" alt="" />
-        <img src="./assets/google_drive.svg" alt="" />
-        <img src="./assets/intercom.svg" alt="" />
-        <img src="./assets/jira.svg" alt="" />
-        <img src="./assets/stripe.svg" alt="" />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="1150"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/notion.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="1100"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/slack.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="1050"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/zapier.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/dropbox.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="950"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/google_drive.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="900"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/intercom.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="850"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/jira.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="800"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/stripe.svg"
+          alt=""
+        />
 
-        <img src="./assets/bitbucket.svg" alt="" />
-        <img src="./assets/confluence.svg" alt="" />
-        <img src="./assets/discord.svg" alt="" />
-        <img src="./assets/figma.svg" alt="" />
-        <img src="./assets/g-calendar.svg" alt="" />
-        <img src="./assets/mailchimp.svg" alt="" />
-        <img src="./assets/whatsapp.svg" alt="" />
-        <img src="./assets/zendesk.svg" alt="" />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="750"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/bitbucket.svg"
+          alt=""
+        />
+
+        <img
+          data-aos="fade-right"
+          data-aos-delay="700"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/confluence.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="650"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/discord.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/figma.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="550"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/g-calendar.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="500"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/mailchimp.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="450"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/whatsapp.svg"
+          alt=""
+        />
+        <img
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          src="./assets/zendesk.svg"
+          alt=""
+        />
       </div>
     </section>
 
     <!-- feature section starts here -->
     <section class="feature">
       <div class="feature_top">
-        <h1>Feature</h1>
-        <p>
+        <h1
+          data-aos="fade-up"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Feature
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
           Clarity gives you the blocks & components you need to create a truly
           professional website, landing page or admin panel for your SaaS.
         </p>
       </div>
       <div class="feature_buttom">
         <div class="tabs">
-          <button class="tab active" data-tab="1">Account Overview</button>
-          <button class="tab" data-tab="2">Visa</button>
-          <button class="tab" data-tab="3">Services</button>
-          <button class="tab" data-tab="4">Plugins</button>
+          <button
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="tab active"
+            data-tab="1"
+          >
+            Account Overview
+          </button>
+          <button
+            data-aos="fade-right"
+            data-aos-delay="450"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="tab"
+            data-tab="2"
+          >
+            Visa
+          </button>
+          <button
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="tab"
+            data-tab="3"
+          >
+            Services
+          </button>
+          <button
+            data-aos="fade-right"
+            data-aos-delay="550"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            class="tab"
+            data-tab="4"
+          >
+            Plugins
+          </button>
         </div>
 
         <div class="tab-content">
           <img
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
             id="tab1"
             src="./assets/tab_Image.png"
             class="tab-image active-image"
           />
-          <img id="tab2" src="./assets/tab_Image.png" class="tab-image" />
-          <img id="tab3" src="./assets/tab_Image.png" class="tab-image" />
-          <img id="tab4" src="./assets/tab_Image.png" class="tab-image" />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            id="tab2"
+            src="./assets/tab_Image.png"
+            class="tab-image"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            id="tab3"
+            src="./assets/tab_Image.png"
+            class="tab-image"
+          />
+          <img
+            data-aos="fade-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+            id="tab4"
+            src="./assets/tab_Image.png"
+            class="tab-image"
+          />
         </div>
       </div>
     </section>
@@ -1454,11 +1857,31 @@
     <!-- pricing section starts here -->
     <section class="pricing">
       <div class="pricing_top">
-        <h1>Simple, easy pricing</h1>
-        <p>Amet minim mollit non deserunt ullamco.</p>
+        <h1
+          data-aos="fade-up"
+          data-aos-delay="0"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Simple, easy pricing
+        </h1>
+        <p
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+        >
+          Amet minim mollit non deserunt ullamco.
+        </p>
       </div>
       <div class="pricing_buttom">
-        <div class="card card1">
+        <div
+          data-aos="fade-right"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="card card1"
+        >
           <span>Personal</span>
           <div class="price">
             <h1>$19</h1>
@@ -1599,7 +2022,13 @@
             <a href="">Get 14 Days Free Trial</a>
           </ul>
         </div>
-        <div class="card card2">
+        <div
+          data-aos="fade-up"
+          data-aos-delay="600"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="card card2"
+        >
           <span>Professional</span>
           <div class="price">
             <h1>$49</h1>
@@ -1633,7 +2062,13 @@
             <a href="">Get 14 Days Free Trial</a>
           </ul>
         </div>
-        <div class="card card3">
+        <div
+          data-aos="fade-left"
+          data-aos-delay="400"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out"
+          class="card card3"
+        >
           <span>Business</span>
           <div class="price">
             <h1>$99</h1>
@@ -1677,7 +2112,9 @@
           <img src="./assets/image 24.png" alt="" />
         </div>
         <div class="joinus_buttom">
-          <h1>Join us It’s Free 👋</h1>
+          <h1 style="display: flex; align-items: center">
+            Join us It’s Free 👋
+          </h1>
           <p>
             Clarity gives you the blocks and components you need to create a
             truly professional website.
@@ -1875,9 +2312,27 @@
         <p>Be the first one to know about discounts, offers and events</p>
       </div>
       <form action="">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="21" viewBox="0 0 16 17" fill="none">
-          <path d="M11.332 14.1668H4.66536C2.66536 14.1668 1.33203 13.1668 1.33203 10.8335V6.16683C1.33203 3.8335 2.66536 2.8335 4.66536 2.8335H11.332C13.332 2.8335 14.6654 3.8335 14.6654 6.16683V10.8335C14.6654 13.1668 13.332 14.1668 11.332 14.1668Z" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
-          <path d="M11.3346 6.5L9.24797 8.16667C8.5613 8.71333 7.43463 8.71333 6.74797 8.16667L4.66797 6.5" stroke="white" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="20"
+          height="21"
+          viewBox="0 0 16 17"
+          fill="none"
+        >
+          <path
+            d="M11.332 14.1668H4.66536C2.66536 14.1668 1.33203 13.1668 1.33203 10.8335V6.16683C1.33203 3.8335 2.66536 2.8335 4.66536 2.8335H11.332C13.332 2.8335 14.6654 3.8335 14.6654 6.16683V10.8335C14.6654 13.1668 13.332 14.1668 11.332 14.1668Z"
+            stroke="white"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M11.3346 6.5L9.24797 8.16667C8.5613 8.71333 7.43463 8.71333 6.74797 8.16667L4.66797 6.5"
+            stroke="white"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
         </svg>
         <input type="email" placeholder="Enter your email" />
         <button type="submit">Submit</button>
@@ -1934,18 +2389,9 @@
     <p class="footer_bottom_text">© 2024, All Rights Reserved</p>
 
     <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      $(document).ready(function () {
-        // Initialize Swiper with jQuery
-        const mySwiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          slidesPerView: 3,
-          loop: false,
-        });
-      });
+      AOS.init();
     </script>
   </body>
 </html>
