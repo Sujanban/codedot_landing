@@ -27,10 +27,20 @@
   }
 }
 
-.container{
+.container {
   max-width: 1280px !important;
   margin: auto !important;
   padding: 100px 0px !important;
+}
+
+.flex {
+  display: flex !important;
+}
+.items-center {
+  align-items: center !important;
+}
+.space-x-4 {
+  gap: 16px !important;
 }
 
 a {
@@ -379,7 +389,7 @@ button.active .fa-angle-up {
   margin-top: 10vh;
   margin: auto !important;
 }
-.hero_section .slides1{
+.hero_section .slides1 {
   display: flex;
   align-items: center;
   height: 90vh;
@@ -409,7 +419,7 @@ button.active .fa-angle-up {
   );
 }
 
-.hero_section .slides3{
+.hero_section .slides3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 90vh;
@@ -424,18 +434,18 @@ button.active .fa-angle-up {
   );
 }
 
-.hero_section .slides3 .left{
+.hero_section .slides3 .left {
   padding: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.hero_section .slides3 .left div{
+.hero_section .slides3 .left div {
   position: relative;
   z-index: 9999999;
 }
 
-.hero_section .slides3 .left svg{
+.hero_section .slides3 .left svg {
   position: absolute;
   z-index: 111;
   left: 0;
@@ -468,32 +478,27 @@ button.active .fa-angle-up {
   box-shadow: 0px 1px 15px 0px rgba(0, 0, 0, 0.55);
 }
 
-
-
-.hero_section .slides3 .right img{
+.hero_section .slides3 .right img {
   width: 100%;
   position: relative;
   top: 50%;
   transform: translateY(-50%);
 }
 
-
-
-
-.hero_section .slides2{
+.hero_section .slides2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-.hero_section .slides2 .left{
+.hero_section .slides2 .left {
   position: relative;
 }
-.hero_section .slides2 .left svg{
+.hero_section .slides2 .left svg {
   position: relative;
   left: 0;
   bottom: -10vh;
 }
-.hero_section .slides2 .left img{
+.hero_section .slides2 .left img {
   top: 50%;
   transform: translateY(-50%);
   width: 100%;
@@ -506,7 +511,7 @@ button.active .fa-angle-up {
   margin: 90px;
   max-width: 460px;
 }
-.hero_section .slides2 .right{
+.hero_section .slides2 .right {
   /* margin: 90px; */
   /* max-width: 460px; */
 }
@@ -536,11 +541,9 @@ button.active .fa-angle-up {
 .hero_section .slides2 .right span {
   color: #2152ff;
   font-size: 128px !important;
-
 }
 .hero_section .slides1 span {
   color: #2152ff;
-
 }
 .hero_section .slides1 div h2 {
   color: var(--gray-900, #090a0b);
@@ -887,6 +890,7 @@ button.active .fa-angle-up {
 }
 
 .mockup_section .mockup_section_left form {
+  padding-top: 40px;
   display: flex;
   gap: 12px;
 }
@@ -904,7 +908,7 @@ button.active .fa-angle-up {
 .mockup_section .mockup_section_right {
   position: relative;
   padding: 20px;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .mockup_section .mockup_section_right img:nth-child(1) {
@@ -1379,6 +1383,23 @@ button.active .fa-angle-up {
 .testimonial .card_content p {
   padding: 25px 0px;
 }
+.testimonial .testimonial_bottom .testimonial_card .author {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.testimonial .testimonial_bottom .testimonial_card .author h5 {
+  color: #094394;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+}
+.testimonial .testimonial_bottom .testimonial_card .author span {
+  color: var(--blue-gray-500, #64748b);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
 
 /* *******************************************trusted_by sectison starts here */
 .trusted_by {
@@ -1501,6 +1522,34 @@ button.active .fa-angle-up {
   font-size: 14px;
   font-style: normal;
   font-weight: 500;
+}
+
+/* *******************************************contact section starts here */
+.contact {
+  max-width: 1280px;
+  margin: auto;
+  padding: var(--Spacing-l, 28px) var(--Radius-xl, 36px);
+}
+.contact .contact_grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.contact .contact_grid .logo_div {
+  margin: auto 0;
+}
+.contact .contact_grid .logo_div a {
+  color: var(--Neutral-800, #191d23);
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.contact p {
+  font-size: 14px;
+}
+.contact a {
+  font-size: 16px;
 }
 
 /* *******************************************newsletter sectison stars here */
