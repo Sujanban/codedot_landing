@@ -1431,10 +1431,15 @@ button.active .fa-angle-up {
 }
 .trusted_by .trusted_by_right {
   position: relative;
+  /* background: url(./assets/gradient-circle.png);
+  background-position: center;
+  object-fit: contain; */
+
 }
 .trusted_by .trusted_by_right_blob {
+  background-image: url(./assets/gradient-circle.png);
   position: relative;
-  width: 531px;
+  width: 40vw;
   height: 435px;
   flex-shrink: 0;
   border-radius: var(--Radius-Sharp, 531px);
@@ -1609,6 +1614,50 @@ button.active .fa-angle-up {
   border-radius: 4px;
 }
 
+
+
+
+
+
+
+@media screen and (max-width: 1280px){
+  body{
+    padding: 0px 20px;
+  }
+
+  .mockup_section_right img:nth-child(1) {
+    width: 100%;
+  }
+  .mockup_section_right img:nth-child(2) {
+    width: 100%;
+  }
+
+  .tryitforfree_banner {
+    max-width: 1280px;
+    margin: auto;
+    padding: 50px 50px 0px 50px;
+    border-radius: var(--Spacing-xl, 40px);
+    background: var(--blue-gray-200, #e2e8f0);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media query starts here */
 @media screen and (max-width: 768px) {
   .trusted_by {
@@ -1689,7 +1738,7 @@ button.active .fa-angle-up {
     justify-content: space-between;
   }
 
-  header {
+  /* header {
     display: none !important;
-  }
+  } */
 }
