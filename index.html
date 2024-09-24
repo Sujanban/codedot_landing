@@ -23,6 +23,23 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+
+
+
+
+
+
+
+
+
+  <!-- owl caurosel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
   <title>CodeDot</title>
 </head>
 
@@ -1855,14 +1872,33 @@
 
     <div data-aos="zoom-in" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
       class="video_section_bottom">
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/npQjAYkXK1k?si=g6uepdY7Yosrp-Nj"
+      <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/npQjAYkXK1k?si=g6uepdY7Yosrp-Nj"
         title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+      </iframe> -->
+
+
+      <div class="video-container">
+        <video controls id="myVideo" poster="./assets/Dashboard.png">
+          <source src="./assets/video.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <div style="" class="custom-overlay" id="customOverlay">
+          <div class="thumbnail">
+            <div class="play-btn">
+              <img src="./assets/Play.png" alt="">
+              <!-- <svg xmlns="http://www.w3.org/2000/svg" class="play-svg" viewBox="0 0 24 24">
+                <path d="M8 5v14l11-7z"></path>
+              </svg> -->
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  
+
   <!-- testimonial section starts here -->
   <section class="container testimonial">
     <div class="testimonial_top">
@@ -1875,7 +1911,145 @@
     </div>
 
     <div class="testimonial_bottom">
-      <swiper-container class="mySwiper" slides-per-view="2" pagination="false" navigation="true">
+
+
+
+      <div class="owl-carousel owl-theme">
+        <div class="testimonial_card item">
+          <img data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            src="./assets/BG.png" alt="" />
+          <div class="card_content">
+            <div class="star">
+              <i data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <div data-aos="fade-up" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              class="author">
+              <h5>Jenny Wilson</h5>
+              <span>Grower.io</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial_card item">
+          <img data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            src="./assets/BG (1).png" alt="" />
+          <div class="card_content">
+            <div class="star">
+              <i data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <div data-aos="fade-up" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              class="author">
+              <h5>Jenny Wilson</h5>
+              <span>Grower.io</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial_card item">
+          <img data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            src="./assets/BG.png" alt="" />
+          <div class="card_content">
+            <div class="star">
+              <i data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <div data-aos="fade-up" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              class="author">
+              <h5>Jenny Wilson</h5>
+              <span>Grower.io</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial_card item">
+          <img data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+            src="./assets/BG (1).png" alt="" />
+          <div class="card_content">
+            <div class="star">
+              <i data-aos="fade-right" data-aos-delay="50" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="100" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="150" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="200" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+              <i data-aos="fade-right" data-aos-delay="250" data-aos-duration="1000" data-aos-easing="ease-in-out"
+                class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <p data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out">
+              "We love Landingfolio! Our designers were using it for their
+              projects, so we already knew what kind of design they want."
+            </p>
+            <div data-aos="fade-up" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
+              class="author">
+              <h5>Jenny Wilson</h5>
+              <span>Grower.io</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top: 25px;" class="slider_nav">
+        <button style="border: none; outline: none; background-color: transparent;" class="am-next">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="27" viewBox="0 0 36 27" fill="none">
+            <path
+              d="M11.5886 11.0894C10.7456 11.7341 10.2939 12.6051 10.2939 13.499C10.2939 14.3929 10.7456 15.2639 11.5886 15.9085L21.1806 23.2435C21.4554 23.4537 21.806 23.5499 22.1425 23.5499C22.479 23.5499 22.8296 23.4537 23.1044 23.2435C23.3831 23.0304 23.5422 22.7296 23.5422 22.409C23.5422 22.0884 23.3831 21.7875 23.1044 21.5744L13.5125 14.2394C13.2234 14.0183 13.1007 13.7477 13.1007 13.499C13.1007 13.2502 13.2234 12.9796 13.5125 12.7585L23.1044 5.42354C23.3831 5.21043 23.5422 4.9096 23.5422 4.58898C23.5422 4.26837 23.3831 3.96754 23.1044 3.75443C22.8296 3.54426 22.479 3.44805 22.1425 3.44805C21.806 3.44805 21.4554 3.54426 21.1806 3.75443L11.5886 11.0894Z"
+              fill="#7991A4" stroke="#7991A4" stroke-width="0.6" />
+          </svg>
+        </button>
+        <button style="border: none; outline: none; background-color: transparent;" class="am-prev">
+          <svg xmlns="http://www.w3.org/2000/svg" width="36" height="27" viewBox="0 0 36 27" fill="none">
+            <path
+              d="M24.0286 15.9106C24.8716 15.2659 25.3232 14.3949 25.3232 13.501C25.3232 12.6071 24.8716 11.7361 24.0286 11.0915L14.4366 3.75646C14.1618 3.54629 13.8112 3.45008 13.4747 3.45008C13.1382 3.45008 12.7876 3.54629 12.5127 3.75646C12.2341 3.96957 12.075 4.2704 12.075 4.59102C12.075 4.91163 12.2341 5.21246 12.5127 5.42558L22.1047 12.7606C22.3938 12.9817 22.5165 13.2523 22.5165 13.501C22.5165 13.7497 22.3938 14.0204 22.1047 14.2415L12.5127 21.5765C12.2341 21.7896 12.075 22.0904 12.075 22.411C12.075 22.7316 12.2341 23.0325 12.5127 23.2456C12.7876 23.4557 13.1382 23.552 13.4747 23.552C13.8112 23.552 14.1618 23.4557 14.4366 23.2456L24.0286 15.9106Z"
+              fill="#7991A4" stroke="#7991A4" stroke-width="0.6" />
+          </svg>
+        </button>
+      </div>
+
+
+
+
+
+
+
+
+      <!-- <swiper-container class="mySwiper" slides-per-view="2" pagination="false" navigation="true">
         <swiper-slide>
           <div class="testimonial_card">
             <img data-aos="fade-right" data-aos-delay="" data-aos-duration="1000" data-aos-easing="ease-in-out"
@@ -1992,7 +2166,7 @@
             </div>
           </div>
         </swiper-slide>
-      </swiper-container>
+      </swiper-container> -->
     </div>
   </section>
 
@@ -2135,6 +2309,79 @@
     </section>
     <p class="footer_bottom_text">© 2024, All Rights Reserved</p>
   </div>
+
+
+
+
+
+
+  <style>
+    .video-container {
+      position: relative;
+      max-width: 1280px;
+      aspect-ratio: 16 / 9;
+      margin: auto;
+      /* You can adjust the size */
+    }
+
+    #myVideo {
+      width: 100%;
+    }
+
+    .custom-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: rgba(0, 0, 0, 0.25);
+      /* Overlay with transparency */
+    }
+
+    .thumbnail-img {
+      width: 100%;
+      display: block;
+    }
+
+    .play-btn {
+      position: absolute;
+      width: 50px;
+      height: 50px;
+      background-color: rgba(255, 255, 255, 0.8);
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: pinging 1.5s infinite ease-in-out;
+    }
+
+    @keyframes pinging {
+      0% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.1);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+  </style>
+
+
+
+
+
+
+
+
+
 
   <script src="./script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -1534,13 +1534,13 @@ button.active .fa-angle-up {
 }
 
 .video_section_top .buttons a:nth-child(1) {
-  padding: 10px 20px;
+  padding: 16px 20px;
   background-color: #000000;
   border-radius: 10px;
   color: white;
 }
 .video_section_top .buttons a:nth-child(2) {
-  padding: 10px 20px;
+  padding: 16px 20px;
   border: 2px solid #000000;
   border-radius: 10px;
   color: black;
@@ -1598,13 +1598,14 @@ button.active .fa-angle-up {
 .testimonial .testimonial_bottom .testimonial_card {
   padding: 10px;
   gap: 20px;
-  max-width: 625px;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .testimonial .testimonial_bottom .star i {
   color: #2563eb;
 }
 .testimonial .card_content {
+  grid-column: span 2;
   padding: 20px;
 }
 .testimonial .card_content p {
@@ -1714,6 +1715,14 @@ button.active .fa-angle-up {
     200px * 12
   ); /* Adjust to the number of total slides (including duplicates) */
   animation: scroll 50s linear infinite;
+}
+.logo-slide-track:nth-child(2){
+  position: relative;
+  left: 50px;
+}
+.logo-slide-track:nth-child(3){
+  position: relative;
+  left: 100px;
 }
 
 .logo-slider .slide {
@@ -1933,12 +1942,9 @@ button.active .fa-angle-up {
 
   .testimonial .testimonial_bottom .testimonial_card {
     padding: 15px;
-    gap: 20px;
-    /* max-width: 625px; */
-    display: flex;
   }
   .testimonial .testimonial_bottom .testimonial_card img {
-    height: 180px;
+    
   }
   .testimonial .testimonial_card h5,
   .testimonial .testimonial_card span {
@@ -2018,12 +2024,9 @@ button.active .fa-angle-up {
 
   .testimonial .testimonial_bottom .testimonial_card {
     padding: 5px;
-    gap: 20px;
-    /* max-width: 625px; */
-    display: flex;
   }
   .testimonial .testimonial_bottom .testimonial_card img {
-    height: 180px;
+    
   }
   .testimonial .testimonial_card h5,
   .testimonial .testimonial_card span {

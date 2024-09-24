@@ -26,3 +26,50 @@ tabs.forEach((tab) => {
     document.getElementById(`tab${tabId}`).classList.add("active-image");
   });
 });
+
+
+
+
+// owl causorel
+$(function () {
+  // Owl Carousel
+  var owl = $(".owl-carousel");
+  owl.owlCarousel({
+    items: 2,
+    margin: 10,
+    loop: false,
+    nav: true,
+    dots: false,
+    navText: [$('.am-next'), $('.am-prev')],
+
+
+    responsive: {
+           0: {
+               items: 1,
+               autoHeight: true
+           },
+           900: {
+               items: 2
+           }
+       }
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+// video player section
+
+document.getElementById('customOverlay').addEventListener('click', function() {
+  var video = document.getElementById('myVideo');
+  video.play();  // Start the video
+  this.style.display = 'none';  // Hide the overlay
+});
