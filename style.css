@@ -33,7 +33,7 @@
 .container {
   max-width: 1280px !important;
   margin: auto !important;
-  padding: 100px 0px !important;
+  padding: 100px 10px !important;
 }
 
 .flex {
@@ -79,11 +79,10 @@ header {
 header .header-left {
   display: flex;
   align-items: center;
-  gap: 12px;
 }
 
 header .header-left nav {
-  padding-left: 56px;
+  padding-left: 30px;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -392,6 +391,12 @@ button.active .fa-angle-up {
   margin-top: 10vh;
   margin: auto !important;
 }
+swiper-slide:not(.swiper-slide-active):hover {
+  border-radius: 12px;
+  cursor: pointer;
+  scale: 1.05;
+  transition: 0.3s all ease-in-out;
+}
 .hero_section .slides1 {
   display: flex;
   align-items: center;
@@ -500,6 +505,7 @@ button.active .fa-angle-up {
   position: relative;
   left: 0;
   bottom: -10vh;
+  width: 100%;
 }
 .hero_section .slides2 .left img {
   top: 50%;
@@ -664,8 +670,11 @@ button.active .fa-angle-up {
   top: -20px;
   position: absolute;
   width: 100%;
+  height: 102%;
   max-height: 516px;
   transform: translate(20px, 20px);
+  object-fit: cover;
+  border-radius: 20px;
 }
 .company_left .image_over {
   position: absolute;
@@ -938,7 +947,7 @@ button.active .fa-angle-up {
 .tryitforfree_banner {
   max-width: 1280px;
   margin: auto;
-  padding: 80px 80px 0px 80px;
+  padding: 80px 70px 0px 70px;
   border-radius: var(--Spacing-xl, 40px);
   background: var(--blue-gray-200, #e2e8f0);
 }
@@ -1038,12 +1047,13 @@ button.active .fa-angle-up {
 
 /* ***********************************************mockup_section************************************** */
 .mockup_section {
-  max-width: 1280px;
+  max-width: 1440px;
   margin: auto;
   padding: 80px 0px;
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
+  padding-left: 5%;
 }
 .mockup_section .mockup_section_left {
   padding: 40px 0px;
@@ -1100,19 +1110,21 @@ button.active .fa-angle-up {
 } */
 
 .mockup_section .mockup_section_right {
-  position: absolute;
+  /* position: absolute; */
+  position: relative;
   right: 0;
   padding: 20px;
   /* overflow: hidden; */
 }
 
 .mockup_section .mockup_section_right img:nth-child(1) {
-  max-width: 800px;
+  width: 100%;
 }
 .mockup_section .mockup_section_right img:nth-child(2) {
   position: absolute;
-  left: -150px;
+  left: -100px;
   top: 10%;
+  width: 70%;
 }
 
 /* ***********************************************integration section starts here************************************** */
@@ -1235,15 +1247,15 @@ button.active .fa-angle-up {
 }
 
 .tab-image {
-  display: none; 
-  width: 100%; 
+  display: none;
+  width: 100%;
   height: auto;
-  transition: opacity 0.5s ease-in-out; 
+  transition: opacity 0.5s ease-in-out;
 }
 
 .tab-image.active-image {
   display: block;
-  opacity: 1; 
+  opacity: 1;
 }
 
 .image-container {
@@ -1264,8 +1276,6 @@ button.active .fa-angle-up {
 .image-container:hover img {
   top: -600px;
 }
-
-
 
 /* ***********************************************pricing section starts here************************************** */
 .pricing_top {
@@ -1566,6 +1576,62 @@ button.active .fa-angle-up {
   aspect-ratio: 16 / 9;
 }
 
+
+.video-container {
+  position: relative;
+  max-width: 1280px;
+  aspect-ratio: 16 / 9;
+  margin: auto;
+  /* You can adjust the size */
+}
+
+#myVideo {
+  width: 100%;
+}
+
+.custom-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.25);
+  /* Overlay with transparency */
+}
+
+.thumbnail-img {
+  width: 100%;
+  display: block;
+}
+
+.play-btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: pinging 1.5s infinite ease-in-out;
+}
+
+@keyframes pinging {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
 /* *******************************************testimonial section sectison ends here */
 .testimonial {
   max-width: 1280px;
@@ -1716,11 +1782,11 @@ button.active .fa-angle-up {
   ); /* Adjust to the number of total slides (including duplicates) */
   animation: scroll 50s linear infinite;
 }
-.logo-slide-track:nth-child(2){
+.logo-slide-track:nth-child(2) {
   position: relative;
   left: 50px;
 }
-.logo-slide-track:nth-child(3){
+.logo-slide-track:nth-child(3) {
   position: relative;
   left: 100px;
 }
@@ -1798,7 +1864,7 @@ button.active .fa-angle-up {
   font-style: normal;
   font-weight: 400;
 
-  color: var(--gray-800, #27272a);
+  color: var(--gray-600, #52525b);
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -1820,20 +1886,23 @@ button.active .fa-angle-up {
   max-width: 1280px;
   margin: auto;
   padding: var(--Spacing-l, 28px) var(--Radius-xl, 36px);
+  display: flex;
+  align-items: center;
 }
 .contact .contact_grid {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 .contact .contact_grid .logo_div {
   margin: auto 0;
 }
-.contact .contact_grid .logo_div a {
+.contact .logo_div a {
   color: var(--Neutral-800, #191d23) !important;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
+  padding-right: 12px;
 }
 
 .contact p {
@@ -1870,8 +1939,6 @@ button.active .fa-angle-up {
   color: white;
   opacity: 1; /* Firefox */
 }
-
-
 
 .newsletter h1 {
   color: var(--Shades-White, #fff);
@@ -1916,11 +1983,11 @@ button.active .fa-angle-up {
   padding: 10px 25px;
   border-radius: 4px;
 }
-.newsletter form button:hover{
+.newsletter form button:hover {
   scale: 1.1;
 }
 
-@media screen and (max-width: 1280px) {
+/* @media screen and (max-width: 1280px) {
   body {
     padding: 0px 20px;
   }
@@ -1956,8 +2023,114 @@ button.active .fa-angle-up {
   .testimonial .card_content p {
     font-size: 14px;
   }
-}
+} */
 
+@media screen and (max-width: 1024px) {
+  
+  .hero_section .slides1 div {
+    margin: 40px;
+    max-width: 40vw;
+  }
+
+  .hero_section .slides1 div h1 {
+    font-size: 40px;
+  }
+  .hero_section .slides1 div h2 {
+    font-size: 40px;
+  }
+  .hero_section .slides1 img {
+    width: 40vw;
+  }
+
+  /*  */
+  .hero_section .slides3 .left h1 {
+    font-size: 40px;
+  }
+  /*  */
+
+  .hero_section .slides2 .right h1 {
+    font-size: 40px;
+  }
+  .hero_section .slides2 .right span {
+    font-size: 50px !important;
+  }
+  .hero_section .slides2 .right p {
+    padding-left: 5px;
+  }
+  .hero_section .slides2 .right a {
+    margin-left: 0px;
+  }
+
+  /* company section */
+  .company_right {
+    padding: 0px 10px;
+  }
+  .company_right .company_right_graphics {
+    padding: 24px;
+    gap: 10px;
+  }
+
+  /* try for free section */
+  .tryitforfree_banner_right .girl {
+    width: 100%;
+  }
+
+  /* mockup */
+  .mockup_section .mockup_section_left p{
+    padding-right: 80px;
+  }
+
+
+  /* faature section */
+  .feature .feature_top h1{
+    font-size: 36px;
+  }
+  .image-container img{
+    width: 100%;
+    /* aspect-ratio: 16/9; */
+    height: auto;
+  }
+
+  /* pricing */
+  .pricing_buttom{
+    flex-wrap: wrap;
+  }
+  .pricing_buttom .price h1{
+    font-size: 36px;
+  }
+  .pricing_buttom .card{
+    padding: 20px;
+  }
+
+  /* join us section */
+  .joinus_buttom{
+    padding: 0px 20px;
+  }
+  .joinus_buttom h1{
+    font-size: 36px;
+  }
+  .joinus_top img{
+    padding: 5px;
+  }
+
+  /* video section */
+  .video_section_top h1{
+    font-size: 36px;
+  }
+
+  /* testimonial section */
+  .testimonial .testimonial_top h1{
+    font-size: 36px;
+  }
+
+  /* footer */
+  .contact .contact_grid .logo_div a{
+    font-size: 20px;
+  }
+  .contact a{
+    font-size: 11px;
+  }
+}
 /* media query starts here */
 @media screen and (max-width: 768px) {
   .trusted_by {
@@ -2026,7 +2199,6 @@ button.active .fa-angle-up {
     padding: 5px;
   }
   .testimonial .testimonial_bottom .testimonial_card img {
-    
   }
   .testimonial .testimonial_card h5,
   .testimonial .testimonial_card span {
