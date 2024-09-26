@@ -73,3 +73,13 @@ document.getElementById('customOverlay').addEventListener('click', function() {
   video.play();  // Start the video
   this.style.display = 'none';  // Hide the overlay
 });
+
+
+
+const hamburger = document.getElementById('hamburger');
+const mobile_menu = document.querySelector('.header-left nav');
+
+hamburger.addEventListener('click', function() {
+  mobile_menu.classList.toggle('active');
+});
+

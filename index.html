@@ -36,6 +36,8 @@
 </head>
 
 <body>
+
+
   <!-- header section starts here -->
   <div>
     <header data-aos="fade-down" data-aos-duration="1000" data-aos-easing="ease-in-out">
@@ -43,7 +45,7 @@
         <a href="/">
           <img src="./assets/logo.png" alt="Logo" />
         </a>
-        <nav>
+        <nav id="mobile-menu">
           <!-- Manage Dropdown -->
           <div class="dropdown">
             <button id="manageButton">
@@ -51,7 +53,7 @@
               <i class="fa-solid fa-angle-up"></i>
             </button>
             <div id="manageDropdown" class="dropdown-content">
-              <h1>Manage</h1>
+              <h1 class="dropdown-menu-title">Manage</h1>
               <div class="dropdown-menu-wrapper">
                 <div class="dropdown-menu">
                   <!-- manage menu section left -->
@@ -547,7 +549,7 @@
               <i class="fa-solid fa-angle-up"></i>
             </button>
             <div id="featuresDropdown" class="dropdown-content">
-              <h1>Features</h1>
+              <h1 class="dropdown-menu-title">Features</h1>
               <div class="dropdown-menu-wrapper">
                 <div class="dropdown-menu">
                   <!-- feature menu section left -->
@@ -993,15 +995,26 @@
 
           <a href="">Pricing</a>
           <a href="">Learn</a>
+          <a class="desktop-hidden" href="">Sign in</a>
+          <a class="desktop-hidden" href="">Create free account</a>
         </nav>
       </div>
       <div class="header-right">
         <a href="">Sign in</a>
-        <a href="">Sign up</a>
+        <a href="">Create free account</a>
+      </div>
+      <div id="hamburger" class="hamburger">
+        <i class="fa-solid fa-bars"></i>
       </div>
     </header>
   </div>
   <!-- header section ends here -->
+
+
+
+
+
+
 
   <section class="hero_section">
     <swiper-container class="mySwiper" 
@@ -2316,7 +2329,9 @@
   <script src="./script.js"></script>
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
-    AOS.init();
+    AOS.init({
+      once: true,
+    });
   </script>
 </body>
 
