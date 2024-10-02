@@ -647,7 +647,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .slide4 .right img {
   transform: translateX(70px);
   position: relative;
-  scale: 1.5;
+  scale: 1.35;
   width: 100%;
 }
 
@@ -1411,13 +1411,15 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .pricing_buttom .card {
   max-width: 360px;
   display: grid;
+  position: relative !important;
   gap: 20px;
   padding: 22px;
   border-radius: 14px;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
 }
 .pricing_buttom .card:hover{
-  transform: translateY(-10px);
+  scale: 1.01;
+  transform: translateY(-20px);
   box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.25);
 
 }
@@ -1723,9 +1725,9 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   animation: pinging 1.5s infinite ease-in-out;
   box-shadow: 0px 0px 100px 15px rgba(0, 0, 0, 0.25);
 }
-/* .play-btn img {
-  width: 400%;
-} */
+.play-btn i {
+  font-size: 40px;
+}
 
 @keyframes pinging {
   0% {
@@ -1813,6 +1815,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   gap: 12px;
 }
 .trusted_by .trusted_by_left {
+  padding: 80px 0px;
   background: url(./assets/trustedby\ background.png);
   background-position: center;
   background-size: cover;
@@ -1840,11 +1843,13 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   /* background: url(./assets/gradient-circle.png);
   background-position: center;
   object-fit: contain; */
+  /* box-shadow: -10px -10px 222px 100px rgba(0,0,0,1); */
 }
 .trusted_by .trusted_by_right_blob {
   background-image: url(./assets/gradient-circle.png);
   position: relative;
-  width: 40vw;
+  width: 30vw;
+  margin: auto;
   height: 435px;
   flex-shrink: 0;
   border-radius: var(--Radius-Sharp, 531px);
@@ -1880,7 +1885,16 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   overflow-x: hidden;
   position: relative;
 }
-
+.logo-slider::after{
+  /* content: '';
+  position: absolute;
+  top: -15px;
+  left: -15px;
+  right: -15px;
+  bottom: -15px;
+  z-index: -1;
+  box-shadow: 0 0 30px 15px rgba(0, 0, 0, 0.5);  */
+}
 .logo-slide-track {
   padding: 12px;
   display: flex;
@@ -2591,7 +2605,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
     text-align: center;
   }
   .trusted_by .trusted_by_right_blob {
-    width: 100%;
+    width: 75%;
   }
   .trusted_by_right_logos {
     width: 90vw;
@@ -2747,8 +2761,11 @@ swiper-slide:not(.swiper-slide-active):hover::before {
     font-size: 32px;
   }
   .play-btn{
-    width: 100px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
+  }
+  .play-btn i {
+    font-size: 20px;
   }
 
   /* testimonial section */
@@ -3069,7 +3086,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
     text-align: center;
   }
   .trusted_by .trusted_by_right_blob {
-    width: 100%;
+    width: 75%;
   }
   .trusted_by_right_logos {
     width: 90vw;
