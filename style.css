@@ -383,7 +383,7 @@ button.active .fa-angle-up {
 /* *******************************hero section starts here*********************************** */
 .hero_section {
   position: relative;
-  max-width: 1280px;
+  max-width: 1440px;
   height: 90vh;
   margin-top: 10vh;
   margin: auto !important;
@@ -1143,13 +1143,12 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 
 /* ***********************************************mockup_section************************************** */
 .mockup_section {
-  max-width: 1440px;
+  max-width: 1280px;
   margin: auto;
   padding: 80px 0px;
   display: flex;
   justify-content: space-between;
   /* align-items: center; */
-  padding-left: 5%;
 }
 .mockup_section .mockup_section_left {
   padding: 40px 0px;
@@ -1417,6 +1416,11 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   border-radius: 14px;
   box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.25);
 }
+.pricing_buttom .card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0px 0px 17px 5px rgba(0, 0, 0, 0.25);
+
+}
 .pricing_buttom .card a:hover {
   scale: 1.1;
   transition: 0.5s all ease-in-out;
@@ -1652,9 +1656,13 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   border-radius: 10px;
   color: black;
 }
+.video_section_top .buttons a:hover {
+  scale: 1.1;
+}
 
 .video_section_top .video_top_p {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
@@ -1705,18 +1713,19 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 }
 
 .play-btn {
-  width: 50px;
-  height: 50px;
+  width: 150px;
+  height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
   animation: pinging 1.5s infinite ease-in-out;
+  box-shadow: 0px 0px 100px 15px rgba(0, 0, 0, 0.25);
 }
-.play-btn img {
-  width: 100%;
-}
+/* .play-btn img {
+  width: 400%;
+} */
 
 @keyframes pinging {
   0% {
@@ -2736,6 +2745,10 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   }
   .video_section_top h1 {
     font-size: 32px;
+  }
+  .play-btn{
+    width: 100px;
+    height: 100px;
   }
 
   /* testimonial section */
