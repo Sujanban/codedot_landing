@@ -33,7 +33,7 @@ tabs.forEach((tab) => {
 // owl causorel for tetimonial
 $(function () {
   // Owl Carousel
-  var owl = $(".owl-carousel");
+  var owl = $(".owl-one");
   owl.owlCarousel({
     items: 2,
     margin: 10,
@@ -59,44 +59,37 @@ $(function () {
 
 
 
-
-
-
-
-
-
-
-
-
-// owl causorel for why choose us page
 $(function () {
   // Owl Carousel
-  var owl = $(".why-choose-us-caurosel");
+  var owl = $(".owl-two");
   owl.owlCarousel({
     items: 3,
-    margin: 10,
     loop: false,
     nav: true,
     dots: false,
-    navText: [$('.am-next-whychooseus'), $('.am-prev-whychooseus')],
+    navText: [$('.am-nextt'), $('.am-prevv')],
     responsive: {
       0: {
           items: 1,
           autoHeight: true
       },
-      768: {
-          items: 2,
-          autoHeight: true
+      500: {
+          items: 2
       },
-      1024:{
-        items: 3,
-        autoHeight: true
+      999: {
+        items: 3
       }
   }
-
-
   });
 });
+
+
+
+
+
+
+
+
 
 
 

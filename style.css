@@ -288,7 +288,7 @@ button.active span {
 }
 
 .dropdown-item-hover1 .dropdown-item-hover-content {
-  width: 480px;
+  /* width: 480px; */
   padding: 20px 0px;
 }
 .dropdown-item-hover2 .dropdown-item-hover-content {
@@ -371,7 +371,7 @@ button.active span {
   /* background-color: #007ac1; Slightly darker blue on hover */
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.36);
   border-radius: 6px;
-  scale: 1.1;
+  /* scale: 1.1; */
   transition: 0.3s all ease-in-out;
 }
 
@@ -946,7 +946,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .whychooseus-para {
     color: #090914;
     max-width: 600px;
-    font-size: 18px;
+    font-size: 16px;
     font-style: normal;
     font-weight: 400;
     line-height: 30px;
@@ -2673,6 +2673,11 @@ font-size: 24px !important;
   }
   .company_right .company_right_graphics div span{
     font-size: 14px;
+  }
+
+  /* why choose us */
+  .whychooseus .whychooseus-card{
+    margin: 0;
   }
 
   /* trusted by sectiuon */
