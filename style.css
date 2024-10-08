@@ -203,6 +203,13 @@ button.active span {
   display: flex;
   float: right;
 }
+.enjoy-our-free-trial:hover{
+  scale: 1.1;
+  transition: 0.5s;
+  background: linear-gradient(90deg, #0083ca 10%, #00486e 100%);
+
+  cursor: pointer;
+}
 
 .dropdown-image-feature {
   width: 445px;
@@ -870,6 +877,10 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   font-weight: 400;
   line-height: 26px;
 }
+.company_right_graphics_button{
+  display: flex;
+  align-items: center;
+}
 .company_right_graphics_button a {
   background: var(--Primary-Primary, #009ff5);
   padding: 16px 28px;
@@ -881,8 +892,9 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   position: relative;
 }
 .company_right_graphics_button a:hover {
-  background-color: #0024a1;
+  scale: 1.1;
   transition: 0.3s all ease-in-out;
+  background: #1d4ed8 !important;
 }
 
 
@@ -891,14 +903,6 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 
 
 .mockup_section_left a {
-  /* padding: 14px 20px;
-  color: white;
-  border-radius: 18px;
-  background: var(--Primary-Blue-500, #1d4ed8);
-  display: flex;
-  align-items: center;
-  gap: 6px; */
-
   background: var(--Primary-Primary, #009ff5);
   padding: 16px 28px;
   font-size: 16px;
@@ -1185,7 +1189,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   /* align-items: center; */
 }
 .mockup_section .mockup_section_left {
-  padding: 40px 0px;
+  padding: 40px 10px;
   max-width: 500px;
 }
 .mockup_section .mockup_section_left h1 {
@@ -1633,8 +1637,12 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .joinus .enquiry_button_wrapper {
   display: flex !important;
 }
+.enquiry_button_wrapper button{
+  border: none !important;;
+}
 .joinus_buttom form .enquiry_button {
   outline: none;
+  border: none;
   padding: 18px 20px;
   border-radius: 50px;
   border: 1px solid #94a3b8;
