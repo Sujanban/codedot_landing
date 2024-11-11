@@ -66,12 +66,16 @@ header {
   justify-content: space-between;
   margin: auto;
   height: 10vh;
-  padding: 0px 20px;
+  padding: 0px 20px 0px 0px;
 }
 
 header .header-left {
   display: flex;
   align-items: center;
+}
+
+.header-left .site_logo img{
+  height: 50px;
 }
 
 header .header-left nav {
@@ -1014,7 +1018,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   overflow: hidden;
 }
 .whychooseus .whychooseus-card:hover img {
-  background: rgba(9, 10, 11, 0.27);
+  /* background: rgba(9, 10, 11, 0.27); */
 }
 
 .whychooseus .whychooseus-card-content {
@@ -1056,6 +1060,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .whychooseus swiper-slide img {
   width: 100%;
   height: auto;
+  border: 2px solid red;
 }
 
 .whychooseus .swiper-navigation-container {
@@ -1160,7 +1165,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .tryitforfree_banner_right .union {
   position: absolute;
   top: -60px;
-  left: -50px;
+  left: -81px;
 }
 .union_text {
   font-size: 16px;
@@ -1270,7 +1275,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .mockup_section .mockup_section_right img:nth-child(2) {
   position: absolute;
   left: -50px;
-  top: 20%;
+  top: 30%;
   width: 50%;
 }
 
@@ -1321,6 +1326,7 @@ swiper-slide:not(.swiper-slide-active):hover::before {
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
 }
 
