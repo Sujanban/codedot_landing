@@ -1275,8 +1275,9 @@ swiper-slide:not(.swiper-slide-active):hover::before {
 .mockup_section .mockup_section_right img:nth-child(2) {
   position: absolute;
   left: -50px;
-  top: 30%;
+  top: 32%;
   width: 50%;
+  scale: 1.2;
 }
 
 /* ***********************************************integration section starts here************************************** */
