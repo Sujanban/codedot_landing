@@ -1,0 +1,582 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.about-us-hero {
+  padding: 96px;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.about-us-hero h5 {
+  color: #7f56d9;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+}
+.about-us-hero h1 {
+  color: #101828;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 60px;
+  letter-spacing: -0.96px;
+}
+.about-us-hero h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+.about-us-hero p {
+  padding: 20px;
+  color: #667085;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.about-us-map {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.about-us-map .map-img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+@keyframes pulse {
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(2.5);
+  }
+}
+.about-us-map .pin {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: #7f56d9;
+}
+.about-us-map .pin::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  background-color: #7f56d9;
+  animation: pulse ease-in-out 1.5s infinite;
+}
+.about-us-map .pin span {
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+  width: 180px;
+  position: absolute;
+  display: none;
+  font-size: 12px;
+  left: 1.5em;
+  bottom: 350%;
+  left: -1050%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+.about-us-map .pin span h4 {
+  padding: 5px 0px;
+}
+.about-us-map .pin:hover span {
+  display: inline-block;
+}
+.about-us-map .australia {
+  bottom: 13%;
+  right: 12%;
+  transform: translate(-50%, -50%);
+}
+.about-us-map .usa {
+  top: 35%;
+  left: 15%;
+  transform: translate(-50%, -50%);
+}
+.about-us-map .nepal {
+  top: 45%;
+  right: 30%;
+  transform: translate(-50%, -50%);
+}
+.about-us-map .germany {
+  top: 35%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+}
+
+.about-us-contact {
+  padding: 96px;
+  max-width: 1440px;
+  margin: auto;
+}
+.about-us-contact .about-us-contact-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+.about-us-contact .about-us-contact-content div {
+  display: grid;
+  gap: 4px;
+}
+.about-us-contact .about-us-contact-content div h4 {
+  color: #101828;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+}
+.about-us-contact .about-us-contact-content div p {
+  color: #667085;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.about-us-contact .about-us-contact-content div a {
+  display: block;
+  margin-top: #6941c6;
+  color: #6941c6;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.about-us-team {
+  padding: 96px;
+  max-width: 1440px;
+  margin: auto;
+}
+.about-us-team .about-us-team-content-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.about-us-team .about-us-team-content-top h1 {
+  color: #090914;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 62px;
+  letter-spacing: -2px;
+}
+.about-us-team .about-us-team-content-top h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+.about-us-team .about-us-team-content-top h5 {
+  padding-top: 20px;
+  max-width: 550px;
+  margin: auto;
+  color: #52525b;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+.about-us-team .about-us-team-content-bottom .comment-box {
+  display: flex;
+  margin: auto;
+  transform: translateY(40%);
+}
+.about-us-team .about-us-team-content-bottom .about-us-team {
+  display: flex;
+  justify-content: center;
+}
+.about-us-team .about-us-team-content-bottom .about-us-team img {
+  width: 250px;
+  margin-top: auto;
+  position: relative;
+}
+.about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(1) {
+  transform: translateX(40%);
+  height: 190px;
+}
+.about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(2) {
+  transform: translateX(20%);
+  height: 190px;
+}
+.about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(3) {
+  margin-bottom: auto;
+  scale: 1.2;
+  position: relative;
+  bottom: 20px;
+  z-index: 99;
+}
+.about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(4) {
+  transform: translateX(-20%);
+  height: 190px;
+}
+.about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(5) {
+  transform: translateX(-40%);
+  height: 190px;
+}
+
+.vision_statement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 96px;
+  max-width: 1440px;
+  margin: auto;
+  flex-direction: column;
+}
+.vision_statement h1 {
+  padding: 50px 0px;
+  color: #101828;
+  text-align: center;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 48px;
+}
+.vision_statement h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+.vision_statement .vision_statement_grid {
+  background-color: #e4e4e7;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1px;
+}
+.vision_statement .vision_statement_grid div {
+  background-color: white;
+  padding: 38px;
+}
+.vision_statement .vision_statement_grid div img {
+  margin: auto;
+  height: 40px;
+  display: block;
+}
+.vision_statement .vision_statement_grid div h3 {
+  padding: 40px 0px 20px 0px;
+  color: #101828;
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+}
+.vision_statement .vision_statement_grid div p {
+  max-width: 330px;
+  margin: auto;
+  color: var(--gray-600, #52525b);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.client_say {
+  padding: 96px;
+  max-width: 1440px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+.client_say h1 {
+  color: #000;
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.client_say h1::after {
+  content: "";
+  display: block;
+  width: 60%;
+  height: 3px;
+  background: rgba(0, 0, 0, 0.2);
+  margin-left: auto;
+}
+.client_say p {
+  padding: 20px;
+  max-width: 850px;
+  margin: auto;
+  color: var(--Neutral-500, #64748b);
+  text-align: center;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
+}
+.client_say .slient_say_image {
+  margin-top: 50px;
+  padding: 100px 40px;
+  position: relative;
+  z-index: 999;
+}
+.client_say .slient_say_image img:nth-child(2) {
+  transform: translateY(50px);
+}
+.client_say .slient_say_image img:nth-child(3) {
+  position: absolute;
+  z-index: -99;
+  left: 10%;
+  right: auto;
+  top: 0;
+  bottom: auto;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.client_say .slient_say_image img:nth-child(4) {
+  position: absolute;
+  z-index: -99;
+  left: -10%;
+  right: auto;
+  top: 30%;
+  bottom: auto;
+  height: 174px;
+  width: 174px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.client_say .slient_say_image img:nth-child(5) {
+  position: absolute;
+  z-index: -99;
+  left: 0;
+  right: auto;
+  top: auto;
+  bottom: 10%;
+  height: 107px;
+  width: 107px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.client_say .slient_say_image img:nth-child(6) {
+  position: absolute;
+  z-index: -99;
+  left: auto;
+  right: 10%;
+  top: 10%;
+  bottom: auto;
+  height: 108px;
+  width: 108px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.client_say .slient_say_image img:nth-child(7) {
+  position: absolute;
+  z-index: -99;
+  left: auto;
+  right: -10%;
+  top: 50%;
+  bottom: auto;
+  height: 174px;
+  width: 174px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+.client_say .slient_say_image img:nth-child(8) {
+  position: absolute;
+  z-index: -99;
+  left: auto;
+  right: 0;
+  top: auto;
+  bottom: 0;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1200px) {
+  .about-us-hero h1,
+  .about-us-team .about-us-team-content-top h1,
+  .vision_statement h1,
+  .client_say h1 {
+    font-size: 36px;
+  }
+  .vision_statement .vision_statement_grid div {
+    padding: 20px 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .vision_statement, .client_say{
+    padding: 96px 0;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(3) {
+    scale: 0.9;
+    bottom: -10px;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(2) {
+    transform: translateX(20%);
+    height: 130px;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(1) {
+    transform: translateX(40%);
+    height: 130px;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(4) {
+    transform: translateX(-20%);
+    height: 130px;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(5) {
+    transform: translateX(-40%);
+    height: 130px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-us-team .about-us-team-content-bottom .about-us-team {
+    display: grid;
+  }
+
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(3) {
+    position: inherit;
+    transform: none;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(2) {
+    position: inherit;
+    transform: none;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(1) {
+    position: inherit;
+    transform: none;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(4) {
+    position: inherit;
+    transform: none;
+  }
+  .about-us-team .about-us-team-content-bottom .about-us-team img:nth-child(5) {
+    position: inherit;
+    transform: none;
+  }
+
+  .about-us-contact .about-us-contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .vision_statement .vision_statement_grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-us-hero h1,
+  .about-us-team .about-us-team-content-top h1,
+  .vision_statement h1,
+  .client_say h1 {
+    font-size: 24px;
+  }
+  .about-us-hero,
+  .about-us-contact,
+  .about-us-team,
+  .vision_statement,
+  .client_say {
+    padding: 40px 20px;
+  }
+
+  .client_say .slient_say_image img:nth-child(4) {
+    position: absolute;
+    z-index: -99;
+    left: -10%;
+    right: auto;
+    top: 30%;
+    bottom: auto;
+    height: 134px;
+    width: 134px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .client_say .slient_say_image img:nth-child(7) {
+    position: absolute;
+    z-index: -99;
+    left: auto;
+    right: 50%;
+    top: 50%;
+    bottom: auto;
+    height: 104px;
+    width: 104px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+  .client_say .slient_say_image img:nth-child(8) {
+    position: absolute;
+    z-index: -99;
+    left: auto;
+    right: 0;
+    top: auto;
+    bottom: 0;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .client_say .slient_say_image {
+    padding: 100px 0px;
+  }
+
+  .about-us-hero p,
+  .about-us-team .about-us-team-content-top h5,
+  .client_say p {
+    font-size: 16px;
+  }
+}
