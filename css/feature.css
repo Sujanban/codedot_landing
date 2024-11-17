@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+.feature_hero {
+  background: url("../assets/Background pattern.svg");
+  height: 60vh;
+}
+.feature_hero h1 {
+  padding: 55px 0px;
+  color: var(--Primary-900, #42307d);
+  text-align: center;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 60px; /* 125% */
+  letter-spacing: -0.96px;
+}
+.feature_card_grid {
+  padding: 0px 20px;
+  transform: translateY(-30vh);
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 32px;
+}
+.feature_card_grid .card {
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  border-radius: 22px;
+  background: var(--White, #fff);
+  box-shadow: 0px 12px 16px -4px rgba(16, 24, 40, 0.08),
+    0px 4px 6px -2px rgba(16, 24, 40, 0.03);
+}
+.feature_card_grid .card img {
+  width: 100%;
+  height: 200px;
+  display: grid;
+  margin: auto;
+  object-fit: cover;
+}
+.feature_card_grid .card .card_title {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.feature_card_grid .card .card_title h3 {
+  color: var(--Gray-900, #101828);
+  font-family: Inter;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+}
+
+.feature_card_grid .card .card_title p {
+  color: var(--Gray-500, #667085);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+.load_more_section {
+  transform: translateY(-30vh);
+  margin: 100px 0px 0px 0px;
+  display: flex;
+  justify-content: center;
+}
+.load_more_section button {
+  border-radius: var(--Radius-s, 8px);
+  display: flex;
+  padding: var(--Spacing-sm, 12px) var(--Spacing-ml, 20px);
+  justify-content: center;
+  align-items: center;
+  gap: var(--Spacing-s, 8px);
+  background-color: #4d93f44d;
+  color: #094394;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  border: none;
+}
+.load_more_section button:hover {
+  cursor: pointer;
+  background-color: #0060e84d;
+  transition: 0.3s all ease-in-out;
+}
+
+@media screen and (max-width: 1024px) {
+    .feature_hero h1 {
+        font-size: 32px;
+      }
+  .feature_card_grid {
+    padding: 0px 10px;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+  }
+}
+@media screen and (max-width: 500px) {
+    .feature_hero h1 {
+        font-size: 24px;
+      }
+  .feature_card_grid {
+    padding: 0px 10px;
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
